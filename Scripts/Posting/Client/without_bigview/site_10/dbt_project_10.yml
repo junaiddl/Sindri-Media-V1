@@ -1,0 +1,165 @@
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: "dbt_project"
+version: "1.0.0"
+
+# This setting configures which "profile" dbt uses for this project.
+profile: "dbt_project"
+
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets: # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+
+# In this example config, we tell dbt to build all models in the example/
+# directory as views. These settings can be overridden in the individual model
+# files using the `{{ config(...) }}` macro.
+models:
+  dbt_project:
+    # Config indicated by + and applies to all files under models/example/
+    example:
+      +materialized: view
+    static:
+      +materialized: view
+    dynamic:
+      +materialized: view
+
+vars:
+  site: 10
+  event_action: "Newsletter"
+
+  click_val: '[{"field": "id","label": "ID"},{"field": "article","label": "ARTIKEL"},{"field": "sektion","label": "KATEGORI"},{"field": "tags","label": "Tags","hidden": true},{"field": "date","label": "PUB DATO"},{"field": "brugerbehov","label": "SIDEVISNINGER"},{"field": "clicks","label": "Next Click (%)"}]'
+
+  condition:
+    status: false
+    query: ""
+
+  columns_to_add:
+    status: false
+    columns_name: None
+    condition: ""
+
+  Tendency:
+    dropdown_cte_naming: ["", "_second", "_third"]
+
+    dropdown_titles: ["Kategorier", "Brugerbehov", "Formater"]
+
+    dropdown_mapping:
+      Kategorier: "Categories"
+      Brugerbehov: "Tags"
+      Formater: "tags_r"
+
+    dropdown_values:
+      Categories:
+        [
+          "Fodsundhed og samfund",
+          "Forebyggelse",
+          "Forskning og viden",
+          "Praksis",
+        ]
+      Tags: ["Hjælp mig med at forstå", "Inspirer mig", "Giv mig en fordel"]
+      tags_r:
+        [
+          "Long read",
+          "Kort og godt",
+          "Q&amp",
+          "Best Practice",
+          "Viden og forskning",
+        ]
+
+    dropdown_values_grouping:
+      Categories:
+        [
+          "Fodsundhed og samfund",
+          "Forebyggelse",
+          "Forskning og viden",
+          "Praksis",
+        ]
+      Tags: ["Hjælp mig med at forstå", "Inspirer mig", "Giv mig en fordel"]
+      tags_r:
+        [
+          "Long read",
+          "Kort og godt",
+          "Q&A",
+          "Best Practice",
+          "Viden og forskning",
+        ]
+
+    order_statements:
+      Categories: "'Fodsundhed og samfund', 'Forebyggelse', 'Forskning og viden', 'Praksis'"
+      Tags: "'Hjælp mig med at forstå', 'Inspirer mig', 'Giv mig en fordel'"
+      tags_r: "'Long read', 'Kort og godt', 'Q&A', 'Best Practice', 'Viden og forskning'"
+
+  Traffic:
+    # For dynamic line query chart procedures
+    input_referrers_linechart: "''Direct'', ''Search'', ''Facebook'', ''Newsletter''"
+    output_referrers_linechart: "''Direct'', ''Search'', ''Facebook'', ''Newsletter''"
+
+    # For pageviews_weeks/month/year_dummy_2_3_updated
+    domain: "''https://fagbladet3f.dk/''"
+
+    dropdown_cte_naming: ["_first", "_second"]
+
+    output_referrers_pageviews_channel: "''Forside'',''Search'', ''Facebook'',''X'',''Newsletter''"
+
+    input_tags_pageviews_channel:
+      Kategorier: "''Nyheder'',''Leder'',''Opinion'',''Analyse'',''Reportage''"
+      Brugerbehov: "''Opdater mig'',''Forbind mig'',''Hjælp mig med at forstå'',''Giv mig en fordel'',''Underhold mig'',''Inspirer mig''"
+
+    # This is used in the table of traffic_channels
+    table_grouping:
+      # the default columns require no sort of grouping and will be writting as they are in prod.site_archive_post
+      default_columns: ["tags", "Categories"]
+      # the following will be set to true if we are to create any new column in the table
+      grouping_status: false
+      # we will define the name of the new column, values will be taken from above
+      grouping_columns: [""]
+      # we will also define the JSON for the table output according to the defined column mappings
+      table_json: |
+        ''category'', coalesce(Categories, " "),
+        ''sektion'', coalesce(userneeds, " "),
+      total_columns: 2
+
+    entry_pages_json: |
+      [{"field": "id","label": "ID"},
+      {"field": "article","label": "ARTIKEL"}, 
+      {"field": "category","label": "SEKTION"},
+      {"field": "sektion","label": "BRUGERBEHOV","hidden": true},
+      {"field": "date","label": "PUB DATO"},
+      {"field": "brugerbehov","label": "KLIKS"}]
+
+  # used to modify how the tags/userneeds/sektion values in the table shall be represented (ADD AS STATEMENTS AT THE END)
+  table_modification:
+    table_modification_tendency:
+      userneeds: |
+        userneeds
+      tags: |
+        tags
+      Categories: |
+        Categories
+
+    table_modification_traffic:
+      userneeds: |
+        userneeds
+      tags: |
+        tags
+      Categories: |
+        Categories
+
+  exploration:
+    historic_data: true
+    columns: |
+      'category', COALESCE(userneeds, ''), 'sektion', COALESCE(tags,''),

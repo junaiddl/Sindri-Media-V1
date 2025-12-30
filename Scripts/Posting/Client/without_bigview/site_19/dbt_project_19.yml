@@ -1,0 +1,197 @@
+# The name of your dbt project. It should only contain lowercase characters and underscores.
+# This name is typically reflective of your organization or the purpose of the project.
+name: "dbt_project"
+
+# The version of your dbt project.
+version: "1.0.0"
+
+# Specifies the profile to use for this dbt project.
+# Profiles contain database connection details and are defined in a separate YAML file.
+profile: "dbt_project"
+
+# Paths to directories where dbt will look for different types of files.
+# You can specify custom paths here if your project structure is different.
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+# Specifies directories that should be removed when you run `dbt clean`.
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Configuration for models within the project.
+# The example below configures all models within the `example/` directory as views.
+# You can override these settings in individual model files using the `{{ config(...) }}` macro.
+models:
+  dbt_project:
+    # Configuration applied to all models in the "example/" directory.
+    example:
+      +materialized: view
+    static:
+      +materialized: view
+    dynamic:
+      +materialized: view
+
+# Variables used within your dbt project.
+# You can reference these variables in your SQL files or macros using the `{{ var('...') }}` syntax.
+vars:
+  # Site identifier for use in the project.
+  site: 19
+  # Action to be used for event tracking.
+  event_action: "Next Click"
+
+  # JSON string defining click-related fields and their labels.
+  click_val: '[{"field": "id", "label": "ID"}, {"field": "article", "label": "ARTIKEL"}, {"field": "category", "label": "BRUGERBEHOV"}, {"field": "sektion", "label": "KATEGORI", "hidden": true}, {"field": "tags", "label": "TAGS", "hidden": true}, {"field": "date", "label": "DATO"}, {"field": "brugerbehov", "label": "SIDEVISNINGER"}, {"field": "clicks", "label": "NEXT CLICK (%)"}]'
+
+  # Condition settings to be used within your models or macros.
+  condition:
+    status: false
+    query: ""
+
+  # Settings for adding columns to existing tables or views.
+  columns_to_add:
+    status: false
+    columns_name: NONE
+    condition: ""
+
+  # Configuration for tendency-related operations.
+  Tendency:
+    # Naming conventions for CTEs in dropdowns.
+    dropdown_cte_naming: ["", "_second", "_third"]
+
+    # Titles used in dropdown menus.
+    dropdown_titles: ["Brugerbehov", "Kategori", "Tags"]
+
+    # Mapping between dropdown titles and internal identifiers.
+    dropdown_mapping:
+      Brugerbehov: "userneeds"
+      Kategori: "Categories"
+      Tags: "tags"
+
+    # Possible values for the dropdown menus.
+    dropdown_values:
+      userneeds:
+        [
+          "Opdater mig",
+          "Forbind mig",
+          "Hjælp mig med at forstå",
+          "Giv mig en fordel",
+          "Underhold mig",
+          "Inspirer mig",
+        ]
+      Categories:
+        [
+          "Nyheder|Analyse|Pressemeddelelse",
+          "Debat",
+          "Event",
+          "Magasinet med.",
+          "Policy|Høringssvar|Politisk notat",
+        ]
+      tags:
+        [
+          "Life science|Forskning & innovation|Kliniske forsøg|EU",
+          "Lægemiddelindustrien i tal",
+          "Sundhedspolitik|politik",
+          "Adgang til medicin|Sygehusmedicin|Apoteksmedicin|Forsyning",
+          "Uddannelse & beskæftigelse",
+        ]
+
+    # Grouping of dropdown values.
+    dropdown_values_grouping:
+      userneeds:
+        [
+          "Opdater mig",
+          "Forbind mig",
+          "Hjælp mig med at forstå",
+          "Giv mig en fordel",
+          "Underhold mig",
+          "Inspirer mig",
+        ]
+      Categories: ["Nyhed", "Debat", "Event", "Magasinet med.", "Policy"]
+
+      tags:
+        [
+          "Life science",
+          "Lægemiddelindustrien i tal",
+          "Sundhedspolitik",
+          "Adgang til medicin",
+          "Uddannelse & beskæftigelse",
+        ]
+
+    # Ordering of statements related to dropdown values.
+    order_statements:
+      userneeds: "'Opdater mig','Forbind mig','Hjælp mig med at forstå','Giv mig en fordel', 'Underhold mig', 'Inspirer mig'"
+      Categories: "'Nyhed', 'Debat', 'Event', 'Magasinet med.', 'Policy'"
+      tags: "'Life science', 'Lægemiddelindustrien i tal', 'Sundhedspolitik', 'Adgang til medicin', 'Uddannelse & beskæftigelse'"
+
+  # Configuration for traffic-related operations.
+  Traffic:
+    # Input and output referrer values for line chart queries.
+    input_referrers_linechart: "''Direct'', ''Search'', ''LinkedIn'', ''Newsletter''"
+    output_referrers_linechart: "''Direct'', ''Search'', ''LinkedIn'', ''Newsletter''"
+
+    # Domain used in pageview-related queries.
+    domain: "''https://www.lif.dk''"
+
+    # Naming conventions for CTEs in dropdowns specific to traffic.
+    dropdown_cte_naming: ["_first", "_second", "_third"]
+
+    # Output referrers for pageview-related operations.
+    output_referrers_pageviews_channel: "''Forside'',''Search'',''LinkedIn'', ''Newsletter''"
+    output_referrers_pageviews_channel_traffic: "''Forside'', ''Search'', ''LinkedIn''"
+    output_referrers_pageviews_channel_newsletter: "''Newsletter''"
+
+    # Input tags for pageview-related operations grouped by user needs.
+    input_tags_pageviews_channel:
+      Brugerbehov: "''Forbind mig'', ''Inspirer mig'', ''Hjælp mig med at forstå'', ''Giv mig en fordel'', ''Opdater mig'', ''Underhold mig''"
+      Kategori: "''Nyhed'', ''Debat'', ''Event'', ''Magasinet med.'', ''Policy''"
+      Tags: "''Life science'', ''Lægemiddelindustrien i tal'', ''Sundhedspolitik'', ''Adgang til medicin'', ''Uddannelse & beskæftigelse''"
+
+    # Configuration for grouping in traffic channels tables.
+    table_grouping:
+      # Default columns that require no grouping, directly reflecting prod.site_archive_post.
+      default_columns: ["tags", "userneeds", "Categories"]
+      # Status indicator for whether new columns should be created.
+      grouping_status: false
+      # Names of the new columns to be created, if applicable.
+      grouping_columns: [""]
+      # JSON for outputting the table according to column mappings.
+      table_json: |
+        ''category'', coalesce(userneeds, " "),
+        ''tags'', coalesce(Tags," "),
+        ''sektion'', coalesce(Categories, " "),
+      total_columns: 3
+
+    # JSON defining the entry pages structure.
+    entry_pages_json: |
+      [{"field": "id","label": "ID"},{"field": "article","label": "ARTIKEL"},{"field": "category","label": "BRUGERBEHOV"},{"field": "sektion","label": "KATEGORI","hidden": true},{"field": "tags","label": "TAGS","hidden": true},{"field": "date","label": "DATO"},{"field": "brugerbehov","label": "Besøg"}]
+
+  # Configuration for modifying how tags, user needs, and categories are represented in tables.
+  table_modification:
+    table_modification_tendency:
+      userneeds: |
+        userneeds
+      tags: |
+        tags
+      Categories: |
+        Categories
+
+    table_modification_traffic:
+      userneeds: |
+        userneeds
+      tags: |
+        tags
+      Categories: |
+        Categories
+
+  # Configuration for exploration-related operations.
+  exploration:
+    # Whether to include historic data.
+    historic_data: true
+    # Columns to include in exploration operations.
+    columns: |
+      'category', COALESCE(userneeds, ''), 'sektion', COALESCE(tags,''),

@@ -1,0 +1,221 @@
+{
+  "site": 13,
+  "uge": "uge39",
+  "prev_uge": "uge38",
+  "scenario1": "1",
+  "scenario2": "7",
+  "data1": {
+    "table1": {
+      "data": {
+        "besog": {
+          "total": 4452,
+          "afvigelse_ift_maal": "-57.6%",
+          "udvikling_ift_forrige_uge": "+27.8%"
+        },
+        "sidevisninger": {
+          "total": 8931,
+          "afvigelse_ift_maal": "-57.5%",
+          "udvikling_ift_forrige_uge": "+23.8%"
+        },
+        "Next Click (%)": {
+          "total": 43.0,
+          "afvigelse_ift_maal": "+438.0%",
+          "udvikling_ift_forrige_uge": "-26.7%"
+        }
+      }
+    },
+    "table2": {
+      "data": [
+        {
+          "kanal": "Newsletter",
+          "besog_uge": 569,
+          "andel_af_total": "12.8%",
+          "udvikling_ift_forrige_uge": "+146.3%"
+        },
+        {
+          "kanal": "Direct",
+          "besog_uge": 1040,
+          "andel_af_total": "23.4%",
+          "udvikling_ift_forrige_uge": "+23.5%"
+        },
+        {
+          "kanal": "Others",
+          "besog_uge": 669,
+          "andel_af_total": "15.0%",
+          "udvikling_ift_forrige_uge": "+17.4%"
+        },
+        {
+          "kanal": "Search",
+          "besog_uge": 2118,
+          "andel_af_total": "47.6%",
+          "udvikling_ift_forrige_uge": "+18.7%"
+        },
+        {
+          "kanal": "Facebook",
+          "besog_uge": 56,
+          "andel_af_total": "1.3%",
+          "udvikling_ift_forrige_uge": "+0%"
+        }
+      ]
+    },
+    "table3": {
+      "antal_artikler": 0,
+      "gns_next_click_%": 0,
+      "gns_sidevisninger": 0
+    },
+    "table4": {
+      "over_et_maal": 0,
+      "over_begge_maal": 0,
+      "under_begge_maal": 0
+    },
+    "table5": [
+      {
+        "andel": "",
+        "brugerbehov": "",
+        "gns_next_click_%": "",
+        "gns_sidevisninger": ""
+      }
+    ]
+  },
+  "data2": {
+    "top_forside": [
+      {
+        "tags": "Erhvervsuddannelser,Industrislagter,Jim Jensen",
+        "post_id": "23335",
+        "pub_date": "2025-09-16",
+        "userneeds": "Opdater mig",
+        "categories": "Nyhed",
+        "front_page_clicks": 8
+      },
+      {
+        "tags": "Sydjylland,Slagterindustri,Danish Crown,Jim Jensen",
+        "post_id": "23303",
+        "pub_date": "2025-08-20",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Nyhed",
+        "front_page_clicks": 6
+      },
+      {
+        "tags": "Tidlig pension,Pension,Tilbagetrækning,Nedslidning,Alliancen,Alle brancher",
+        "post_id": "23326",
+        "pub_date": "2025-09-08",
+        "userneeds": "",
+        "categories": "editorial",
+        "front_page_clicks": 2
+      },
+      {
+        "tags": "Mejeri,Arbejdsmiljø,Arbejdsmiljørepræsentant,OK25,Jim Jensen",
+        "post_id": "23323",
+        "pub_date": "2025-09-04",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "front_page_clicks": 2
+      },
+      {
+        "tags": "Ole Wehlast,Fødevareindustri,Butik",
+        "post_id": "23311",
+        "pub_date": "2025-08-26",
+        "userneeds": "Opdater mig",
+        "categories": "Nyhed",
+        "front_page_clicks": 1
+      }
+    ],
+    "visit_summary": [
+      {
+        "kanal": "Newsletter",
+        "besog_uge": 569,
+        "andel_af_total": "12.8%",
+        "udvikling_ift_forrige_uge": "+146.3%"
+      },
+      {
+        "kanal": "Direct",
+        "besog_uge": 1040,
+        "andel_af_total": "23.4%",
+        "udvikling_ift_forrige_uge": "+23.5%"
+      }
+    ],
+    "top_newsletter": [
+      {
+        "tags": "Alka forsikring,Alle brancher",
+        "post_id": "23247",
+        "pub_date": "2025-06-25",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Medlemsinfo",
+        "newsletter_visits": 175
+      },
+      {
+        "tags": "Mejeri,Arbejdsmiljø,Arbejdsmiljørepræsentant,OK25,Jim Jensen",
+        "post_id": "23323",
+        "pub_date": "2025-09-04",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "newsletter_visits": 132
+      },
+      {
+        "tags": "Erhvervsuddannelser,Industrislagter,Jim Jensen",
+        "post_id": "23335",
+        "pub_date": "2025-09-16",
+        "userneeds": "Opdater mig",
+        "categories": "Nyhed",
+        "newsletter_visits": 121
+      },
+      {
+        "tags": "Alle brancher,Opsigelse",
+        "post_id": "23308",
+        "pub_date": "2025-08-21",
+        "userneeds": "Underhold mig",
+        "categories": "Artikel",
+        "newsletter_visits": 74
+      },
+      {
+        "tags": "Mejeri,Taulov Mejeri,Arbejdsmiljø,Arbejdsmiljørepræsentant,OK25",
+        "post_id": "23322",
+        "pub_date": "2025-09-04",
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "newsletter_visits": 9
+      },
+      {
+        "tags": "Pension,Industriens Pension,Slagterindustri,Fødevareindustri,Butik",
+        "post_id": "23302",
+        "pub_date": "2025-08-19",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Medlemsinfo",
+        "newsletter_visits": 4
+      },
+      {
+        "tags": "Opsigelse,Bortvisning,Butik",
+        "post_id": "23144",
+        "pub_date": "2025-05-14",
+        "userneeds": "Forbind mig",
+        "categories": "Det ku' ske for dig",
+        "newsletter_visits": 4
+      },
+      {
+        "tags": "Ole Wehlast,Fødevareindustri,Butik",
+        "post_id": "23311",
+        "pub_date": "2025-08-26",
+        "userneeds": "Opdater mig",
+        "categories": "Nyhed",
+        "newsletter_visits": 3
+      },
+      {
+        "tags": "Slagterindustri,Danish Crown,Danish Crown Horsens,Årets tillidsrepræsentant,Tillidsfolk,Arbejdsmiljø",
+        "post_id": "23328",
+        "pub_date": "2025-09-11",
+        "userneeds": "Inspirer mig",
+        "categories": "Nyhed",
+        "newsletter_visits": 2
+      },
+      {
+        "tags": "Danish Crown,Sjælland og Øerne,Slagterindustri,Sidste runde i Ringsted",
+        "post_id": "23300",
+        "pub_date": "2025-08-14",
+        "userneeds": "Forbind mig",
+        "categories": "Nyhed",
+        "newsletter_visits": 2
+      }
+    ],
+    "last_week_articles": null
+  }
+}

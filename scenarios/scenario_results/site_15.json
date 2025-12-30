@@ -1,0 +1,463 @@
+{
+  "site": 15,
+  "uge": "uge39",
+  "prev_uge": "uge38",
+  "scenario1": "12",
+  "scenario2": "9",
+  "data1": {
+    "goal": {
+      "min_cta": "12",
+      "min_pageviews": "425"
+    },
+    "last_week_articles": [
+      {
+        "tags": "Socialpædagogisk faglighed,Uddannelse",
+        "post_id": "66989",
+        "pub_date": "2025-09-22",
+        "pageviews": 45,
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "",
+        "next_click_%": 31.1111111
+      },
+      {
+        "tags": "Seksualitet,Handicap,Børn og unge",
+        "post_id": "67000",
+        "pub_date": "2025-09-23",
+        "pageviews": 159,
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "",
+        "next_click_%": 9.4339622
+      },
+      {
+        "tags": "Anbringelse,Børn og unge",
+        "post_id": "67026",
+        "pub_date": "2025-09-23",
+        "pageviews": 461,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Plejefamilie",
+        "next_click_%": 5.4229934
+      },
+      {
+        "tags": "Overenskomst,Løn,Arbejdsmiljø",
+        "post_id": "67087",
+        "pub_date": "2025-09-24",
+        "pageviews": 1882,
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "next_click_%": 11.2114771
+      },
+      {
+        "tags": "Arbejdsskade,Vold og trusler",
+        "post_id": "67211",
+        "pub_date": "2025-09-26",
+        "pageviews": 22,
+        "userneeds": "Forbind mig",
+        "categories": "",
+        "next_click_%": 9.090909
+      },
+      {
+        "tags": "Arbejdsmiljø,Stress",
+        "post_id": "67216",
+        "pub_date": "2025-09-26",
+        "pageviews": 0,
+        "userneeds": "",
+        "categories": "",
+        "next_click_%": 0
+      }
+    ],
+    "two_weeks_ago_articles": [
+      {
+        "tags": "Arbejdsmiljø,Metoder og tilgange,Vold og trusler",
+        "post_id": "66658",
+        "pub_date": "2025-09-10",
+        "pageviews": 163,
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "next_click_%": 27.6073619
+      },
+      {
+        "tags": "Arbejdsmiljø,Metoder og tilgange",
+        "post_id": "66699",
+        "pub_date": "2025-09-11",
+        "pageviews": 633,
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "",
+        "next_click_%": 20.8530805
+      },
+      {
+        "tags": "Forbund og a-kasse",
+        "post_id": "66732",
+        "pub_date": "2025-09-16",
+        "pageviews": 92,
+        "userneeds": "",
+        "categories": "",
+        "next_click_%": 20.6521739
+      },
+      {
+        "tags": "Ansættelsesvilkår",
+        "post_id": "66832",
+        "pub_date": "2025-09-17",
+        "pageviews": 133,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Leder",
+        "next_click_%": 21.8045112
+      },
+      {
+        "tags": "Forbund og a-kasse",
+        "post_id": "66839",
+        "pub_date": "2025-09-16",
+        "pageviews": 10,
+        "userneeds": "",
+        "categories": "",
+        "next_click_%": 0
+      }
+    ]
+  },
+  "data2": {
+    "low_week": [
+      {
+        "tags": "Ansættelsesvilkår,Arbejdstid,Sygdom,Løn",
+        "post_id": "66263",
+        "pub_date": "2025-08-27",
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "total_visits": 1802
+      },
+      {
+        "tags": "Arbejdsmiljø,Metoder og tilgange",
+        "post_id": "66699",
+        "pub_date": "2025-09-11",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "",
+        "total_visits": 536
+      },
+      {
+        "tags": "Arbejdsmiljø,Arbejdsskade,Vold og trusler",
+        "post_id": "66576",
+        "pub_date": "2025-09-05",
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "total_visits": 271
+      },
+      {
+        "tags": "Ansættelsesvilkår",
+        "post_id": "57557",
+        "pub_date": "2024-08-13",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Senior",
+        "total_visits": 247
+      },
+      {
+        "tags": "Forbund og a-kasse,Socialpædagogisk faglighed",
+        "post_id": "66191",
+        "pub_date": "2025-08-25",
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "total_visits": 126
+      },
+      {
+        "tags": "Metoder og tilgange,Socialpædagogisk faglighed",
+        "post_id": "66420",
+        "pub_date": "2025-09-02",
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "total_visits": 87
+      },
+      {
+        "tags": "Forbund og a-kasse",
+        "post_id": "66732",
+        "pub_date": "2025-09-16",
+        "userneeds": "",
+        "categories": "",
+        "total_visits": 68
+      },
+      {
+        "tags": "Ansættelsesvilkår",
+        "post_id": "66832",
+        "pub_date": "2025-09-17",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Leder",
+        "total_visits": 55
+      },
+      {
+        "tags": "Arbejdsmiljø,Socialpædagogisk faglighed,Stress",
+        "post_id": "65410",
+        "pub_date": "2025-08-22",
+        "userneeds": "",
+        "categories": "",
+        "total_visits": 52
+      },
+      {
+        "tags": "Misbrug,Socialpædagogisk faglighed,Psykiatri",
+        "post_id": "65764",
+        "pub_date": "2025-09-05",
+        "userneeds": "Inspirer mig",
+        "categories": "",
+        "total_visits": 33
+      }
+    ],
+    "last_week": [
+      {
+        "tags": "Ansættelsesvilkår",
+        "post_id": "57557",
+        "pub_date": "2024-08-13",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Senior",
+        "total_visits": 1090
+      },
+      {
+        "tags": "Arbejdsmiljø,Metoder og tilgange,Vold og trusler",
+        "post_id": "66658",
+        "pub_date": "2025-09-10",
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "total_visits": 656
+      },
+      {
+        "tags": "Anbringelse,Børn og unge",
+        "post_id": "67026",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Plejefamilie",
+        "total_visits": 347
+      },
+      {
+        "tags": "Ansættelsesvilkår,Arbejdstid,Sygdom,Løn",
+        "post_id": "66263",
+        "pub_date": "2025-08-27",
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "total_visits": 221
+      },
+      {
+        "tags": "Seksualitet,Handicap,Børn og unge",
+        "post_id": "67000",
+        "pub_date": "2025-09-23",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "",
+        "total_visits": 108
+      },
+      {
+        "tags": "Arbejdsmiljø,Metoder og tilgange",
+        "post_id": "66699",
+        "pub_date": "2025-09-11",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "",
+        "total_visits": 106
+      },
+      {
+        "tags": "Arbejdsmiljø,Arbejdsskade,Vold og trusler",
+        "post_id": "66576",
+        "pub_date": "2025-09-05",
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "total_visits": 61
+      },
+      {
+        "tags": "Metoder og tilgange,Socialpædagogisk faglighed",
+        "post_id": "66420",
+        "pub_date": "2025-09-02",
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "total_visits": 31
+      },
+      {
+        "tags": "Arbejdsmiljø,Socialpædagogisk faglighed,Stress",
+        "post_id": "65410",
+        "pub_date": "2025-08-22",
+        "userneeds": "",
+        "categories": "",
+        "total_visits": 29
+      },
+      {
+        "tags": "Overenskomst,Løn,Arbejdsmiljø",
+        "post_id": "67087",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "total_visits": 1676
+      }
+    ],
+    "week_before": [
+      {
+        "tags": "Arbejdsmiljø,Arbejdsskade,Vold og trusler",
+        "post_id": "66576",
+        "pub_date": "2025-09-05",
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "total_visits": 1607
+      },
+      {
+        "tags": "Ansættelsesvilkår",
+        "post_id": "57557",
+        "pub_date": "2024-08-13",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Senior",
+        "total_visits": 1234
+      },
+      {
+        "tags": "Metoder og tilgange,Socialpædagogisk faglighed",
+        "post_id": "66420",
+        "pub_date": "2025-09-02",
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "total_visits": 373
+      },
+      {
+        "tags": "Misbrug,Socialpædagogisk faglighed,Psykiatri",
+        "post_id": "65764",
+        "pub_date": "2025-09-05",
+        "userneeds": "Inspirer mig",
+        "categories": "",
+        "total_visits": 137
+      },
+      {
+        "tags": "Metoder og tilgange,Socialpædagogisk praksis,Uddannelse",
+        "post_id": "65324",
+        "pub_date": "2025-09-05",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "",
+        "total_visits": 100
+      },
+      {
+        "tags": "Arbejdsmiljø,Socialpædagogisk faglighed,Stress",
+        "post_id": "65410",
+        "pub_date": "2025-08-22",
+        "userneeds": "",
+        "categories": "",
+        "total_visits": 99
+      },
+      {
+        "tags": "Ansættelsesvilkår,Ferie",
+        "post_id": "66382",
+        "pub_date": "2025-09-01",
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "total_visits": 46
+      },
+      {
+        "tags": "Ansættelsesvilkår,Arbejdstid,Sygdom,Løn",
+        "post_id": "66263",
+        "pub_date": "2025-08-27",
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "total_visits": 36
+      },
+      {
+        "tags": "Pension",
+        "post_id": "65971",
+        "pub_date": "2025-08-13",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Tillidsrepræsentant",
+        "total_visits": 27
+      },
+      {
+        "tags": "Ansættelsesvilkår,Opsigelse",
+        "post_id": "65463",
+        "pub_date": "2025-08-11",
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "total_visits": 20
+      }
+    ],
+    "previous_week": [
+      {
+        "tags": "Metoder og tilgange,Socialpædagogisk faglighed",
+        "post_id": "66420",
+        "pub_date": "2025-09-02",
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "total_visits": 87
+      },
+      {
+        "tags": "Misbrug,Socialpædagogisk faglighed,Psykiatri",
+        "post_id": "65764",
+        "pub_date": "2025-09-05",
+        "userneeds": "Inspirer mig",
+        "categories": "",
+        "total_visits": 33
+      },
+      {
+        "tags": "Arbejdsmiljø,Socialpædagogisk faglighed,Stress",
+        "post_id": "65410",
+        "pub_date": "2025-08-22",
+        "userneeds": "",
+        "categories": "",
+        "total_visits": 52
+      },
+      {
+        "tags": "Ansættelsesvilkår",
+        "post_id": "66832",
+        "pub_date": "2025-09-17",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Leder",
+        "total_visits": 55
+      },
+      {
+        "tags": "Forbund og a-kasse",
+        "post_id": "66732",
+        "pub_date": "2025-09-16",
+        "userneeds": "",
+        "categories": "",
+        "total_visits": 68
+      },
+      {
+        "tags": "Forbund og a-kasse,Socialpædagogisk faglighed",
+        "post_id": "66191",
+        "pub_date": "2025-08-25",
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "total_visits": 126
+      },
+      {
+        "tags": "Ansættelsesvilkår",
+        "post_id": "57557",
+        "pub_date": "2024-08-13",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Senior",
+        "total_visits": 247
+      },
+      {
+        "tags": "Arbejdsmiljø,Arbejdsskade,Vold og trusler",
+        "post_id": "66576",
+        "pub_date": "2025-09-05",
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "total_visits": 271
+      },
+      {
+        "tags": "Arbejdsmiljø,Metoder og tilgange",
+        "post_id": "66699",
+        "pub_date": "2025-09-11",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "",
+        "total_visits": 536
+      },
+      {
+        "tags": "Ansættelsesvilkår,Arbejdstid,Sygdom,Løn",
+        "post_id": "66263",
+        "pub_date": "2025-08-27",
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "total_visits": 1802
+      }
+    ],
+    "weekly_share_summary": [
+      {
+        "week": "2025-09-08 to 2025-09-14",
+        "share_pct": 32.4,
+        "total_visits": 3770
+      },
+      {
+        "week": "2025-09-15 to 2025-09-21",
+        "share_pct": 30.3,
+        "total_visits": 3527
+      },
+      {
+        "week": "2025-09-22 to 2025-09-28",
+        "share_pct": 37.3,
+        "total_visits": 4333
+      }
+    ]
+  }
+}

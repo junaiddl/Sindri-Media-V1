@@ -1,0 +1,196 @@
+
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: 'dbt_project'
+version: '1.0.0'
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'dbt_project'
+
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+
+# In this example config, we tell dbt to build all models in the example/
+# directory as views. These settings can be overridden in the individual model
+# files using the `{{ config(...) }}` macro.
+models:
+  dbt_project:
+    # Config indicated by + and applies to all files under models/example/
+    example:
+      +materialized: view
+    static:
+      +materialized: view
+    dynamic:
+      +materialized: view
+    
+
+vars: 
+  site: 15
+  event_action: 'Next Click'
+
+  click_val: '[
+  {"field": "id", "label": "ID"}, 
+  {"field": "article", "label": "ARTIKEL"}, 
+  {"field": "category", "label": "BRUGERBEHOV"}, 
+  {"field": "sektion", "label": "MÅLGRUPPER", "hidden": true}, 
+  {"field": "tags", "label": "TAGS", "hidden": true}, 
+  {"field": "date", "label": "DATO"}, 
+  {"field": "brugerbehov", "label": "SIDEVISNINGER"}, 
+  {"field": "clicks", "label": "NEXT CLICK (%)"}]'
+
+  condition:
+    status: false
+    query: 'AND Categories <> "Nyhedsoverblik"'
+
+  columns_to_add:
+    status: true
+    columns_name: emner
+    condition: 
+      "CASE 
+        WHEN tags REGEXP 'Børn og unge|Anbringelse|Sikrede institutioner' THEN 'Børn og unge'
+        WHEN tags REGEXP 'Socialpolitik|Nyheder|Forbund og a-kasse|Coronavirus' then 'Andet'
+        WHEN tags REGEXP 'Autisme|Udviklingshandicap|Botilbud|Magtanvendelse|Seksualitet|Domfældte' 
+            THEN 'Handicap'
+        WHEN tags ReGEXP 'Psykiatri|Misbrug|Væresteder|Hjemløse|Herberg og forsorgshjem|Marginaliserede' 
+            THEN 'Psykiatri og udsathed'
+        WHEN tags REGEXP 'Socialpædagogisk faglighed|Socialpædagogisk praksis|Metoder og tilgange|Etik' 
+            THEN 'Socialpædagogisk faglighed'
+        WHEN tags REGEXP 'Ansættelsesvilkår|Opsigelse|Overenskomst|Arbejdstid|Løn|Ferie|Barsel|Senior
+              |Ligestilling|Job og karriere|Uddannelse|Meritpædagoguddannelse|Kompetenceudvikling
+              |Efteruddannelse|Arbejdsmiljø|Stress|Sygdom|Vold og trusler|Arbejdsskade|PTSD|A-kasse
+              |Lønforsikring|Ledighed|Efterløn|Dagpenge|Arbejdsløshed' 
+            THEN 'Arbejdsliv og vilkår'
+      END as "
+
+  Tendency:
+    dropdown_cte_naming: ['', '_second', '_third']
+
+    dropdown_titles: ["Brugerbehov", "Målgruppe", "Emner"]
+
+    dropdown_mapping:
+      Brugerbehov: "userneeds"
+      Målgruppe: "Categories"
+      Emner: "Tags"
+
+    dropdown_values:
+      userneeds: ['Opdater mig', 'Forbind mig', 'Hjælp mig med at forstå', 'Giv mig en fordel', 'Underhold mig', 'Inspirer mig']
+      Categories: ['Leder','Presse','Privatansat','Plejefamilie','Tillidsrepræsentant','Lærere','Arbejdsmiljørepræsentant', 'TRIO']
+      Tags: ['Børn og unge|Anbringelse|Sikrede institutioner', 
+            'Socialpolitik|Nyheder|Forbund og a-kasse|Coronavirus',
+            'Autisme|Udviklingshandicap|Botilbud|Magtanvendelse|Seksualitet|Domfældte',
+            'Psykiatri|Misbrug|Væresteder|Hjemløse|Herberg og forsorgshjem|Marginaliserede',
+            'Socialpædagogisk faglighed|Socialpædagogisk praksis|Metoder og tilgange|Etik',
+            'Ansættelsesvilkår|Opsigelse|Overenskomst|Arbejdstid|Løn|Ferie|Barsel|Senior
+             |Ligestilling|Job og karriere|Uddannelse|Meritpædagoguddannelse|Kompetenceudvikling
+             |Efteruddannelse|Arbejdsmiljø|Stress|Sygdom|Vold og trusler|Arbejdsskade|PTSD|A-kasse
+             |Lønforsikring|Ledighed|Efterløn|Dagpenge|Arbejdsløshed']
+
+    dropdown_values_grouping:
+      userneeds: ['Opdater mig','Forbind mig', 'Hjælp mig med at forstå', 'Giv mig en fordel', 'Underhold mig', 'Inspirer mig']
+      Categories: ['Leder','Presse','Privatansat','Plejefamilie','Tillidsrepræsentant','Lærere','Arbejdsmiljørepræsentant', 'TRIO']
+      Tags:  ['Børn og unge', 'Andet', 'Handicap', 'Psykiatri og udsathed', 'Socialpædagogisk faglighed', 'Arbejdsliv og vilkår']
+
+    order_statements:
+      userneeds: "'Opdater mig','Forbind mig','Hjælp mig med at forstå','Giv mig en fordel', 'Underhold mig', 'Inspirer mig'"
+      Categories: "'Leder','Presse','Privatansat','Plejefamilie','Tillidsrepræsentant','Lærere','Arbejdsmiljørepræsentant', 'TRIO'"
+      Tags: "'Børn og unge', 'Andet', 'Handicap', 'Psykiatri og udsathed', 'Socialpædagogisk faglighed', 'Arbejdsliv og vilkår'"
+
+  Traffic:
+    # For dynamic line query chart procedures
+    input_referrers_linechart: "''Direct'',''Search'',''Newsletter'',''NL Hoved'', ''NL Tillid'',''NL Leder'', ''NL Pleje''"
+    output_referrers_linechart: "''Direct'',''Search'', ''Newsletter''"
+
+    # For pageviews_weeks/month/year_dummy_2_3_updated
+    domain: "''https://sl.dk/''"
+    
+    dropdown_cte_naming: ['_first', '_second', '_third']
+
+    output_referrers_pageviews_channel: "''Forside'',''Search'',''NL Hoved'',''NL Tillid'',''NL Leder'',''NL Pleje''"
+
+    dropdown_titles: ["Brugerbehov", "Målgruppe", "Emner"]
+
+    dropdown_mapping:
+      Brugerbehov: "userneeds"
+      Målgruppe: "Categories"
+      Emner: "Tags"
+
+    dropdown_values:
+      userneeds: ['Opdater mig', 'Forbind mig', 'Hjælp mig med at forstå', 'Giv mig en fordel', 'Underhold mig', 'Inspirer mig']
+      Categories: ['Leder','Tillidsrepræsentant','Plejefamilie','Senior','Privatansat']
+      Tags: ['Børn og unge|Anbringelse|Sikrede institutioner', 
+            'Socialpolitik|Nyheder|Forbund og a-kasse|Coronavirus',
+            'Autisme|Udviklingshandicap|Botilbud|Magtanvendelse|Seksualitet|Domfældte',
+            'Psykiatri|Misbrug|Væresteder|Hjemløse|Herberg og forsorgshjem|Marginaliserede',
+            'Socialpædagogisk faglighed|Socialpædagogisk praksis|Metoder og tilgange|Etik',
+            'Ansættelsesvilkår|Opsigelse|Overenskomst|Arbejdstid|Løn|Ferie|Barsel|Senior
+             |Ligestilling|Job og karriere|Uddannelse|Meritpædagoguddannelse|Kompetenceudvikling
+             |Efteruddannelse|Arbejdsmiljø|Stress|Sygdom|Vold og trusler|Arbejdsskade|PTSD|A-kasse
+             |Lønforsikring|Ledighed|Efterløn|Dagpenge|Arbejdsløshed']
+
+    dropdown_values_grouping:
+      userneeds: ['Opdater mig','Forbind mig', 'Hjælp mig med at forstå', 'Giv mig en fordel', 'Underhold mig', 'Inspirer mig']
+      Categories: ['Leder','Tillidsrepræsentant','Plejefamilie','Senior','Privatansat']
+      Tags:  ['Børn og unge', 'Andet', 'Handicap', 'Psykiatri og udsathed', 'Socialpædagogisk faglighed', 'Arbejdsliv og vilkår']
+
+    input_tags_pageviews_channel : 
+      Brugerbehov: "''Opdater mig'',''Forbind mig'',''Hjælp mig med at forstå'',''Giv mig en fordel'',''Underhold mig'',''Inspirer mig''"
+      Målgruppe: "''Leder'',''Tillidsrepræsentant'',''Plejefamilie'',''Senior'',''Privatansat''"
+      Emner: "''Arbejdsliv og vilkår'', ''Socialpædagogisk faglighed'',''Handicap'',''Børn og unge'',''Psykiatri og sundhed'',''Andet''"
+
+    # This is used in the table of traffic_channels
+    table_grouping:
+      # the default columns require no sort of grouping and will be writting as they are in prod.site_archive_post
+      default_columns: ['tags', 'userneeds', 'Categories']
+      # the following will be set to true if we are to create any new column in the table
+      grouping_status: true
+      # we will define the name of the new column, values will be taken from above
+      grouping_columns: ['Emner']
+      # we will also define the JSON for the table output according to the defined column mappings
+      table_json: |
+        ''category'', coalesce(userneeds, " "),
+        ''tags'', coalesce(Tags," "),
+        ''emner'', coalesce(Emner, " "),
+        ''sektion'', coalesce(Categories, " "),
+      total_columns: 4
+
+    entry_pages_json: |
+      [{"field": "id","label": "ID"},{"field": "article","label": "ARTIKEL"},{"field": "category","label": "BRUGERBEHOV"},{"field": "sektion","label": "MÅLGRUPPER", "hidden" : true},{"field": "tags","label": "Tags", "hidden" : true},{"field": "emner","label": "Emner", "hidden" : true},{"field": "date","label": "DATO"},{"field": "brugerbehov","label": "Besøg"}]
+
+  # used to modify how the tags/userneeds/sektion values in the table shall be represented (ADD AS STATEMENTS AT THE END)
+  table_modification:
+    table_modification_tendency:
+      userneeds: |
+        userneeds
+      tags: |
+        tags
+      Categories: |
+        Categories
+
+    table_modification_traffic:
+      userneeds: |
+        userneeds
+      tags: |
+        tags
+      Categories: |
+        Categories
+
+  exploration:
+    historic_data: true
+    columns: |
+      'category', COALESCE(userneeds, ''), 'sektion', COALESCE(tags,''),

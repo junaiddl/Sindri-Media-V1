@@ -1,0 +1,210 @@
+
+
+
+    
+
+
+
+
+
+CREATE PROCEDURE `tactical_userneeds_clicks_chart_ytd_dbt_11`()
+BEGIN
+	WITH
+        last_30_days_article_published as (
+            SELECT 
+                siteid as siteid,
+                id, 
+                date as fdate  
+            FROM prod.site_archive_post
+			WHERE date 	between MAKEDATE(EXTRACT(YEAR FROM CURDATE()),1)  and  DATE_SUB(cast(NOW() as date), INTERVAL 1 DAY)
+            and siteid = 11
+            
+            AND 
+(
+(tags NOT LIKE "%billedkunst%" 
+AND tags NOT LIKE "%børnehaveklassen%" 
+AND tags NOT LIKE "%dsa%" 
+AND tags NOT LIKE "%engelsk%" 
+AND tags NOT LIKE "%håndværk og design%" 
+AND tags NOT LIKE "%idræt%" 
+AND tags NOT LIKE "%kulturfag%" 
+AND tags NOT LIKE "%lærersenior%" 
+AND tags NOT LIKE "%lærerstuderende%" 
+AND tags NOT LIKE "%madkundskab%" 
+AND tags NOT LIKE "%musik%" 
+AND tags NOT LIKE "%naturfag%" 
+AND tags NOT LIKE "%plc%" 
+AND tags NOT LIKE "%ppr%" 
+AND tags NOT LIKE "%praktik%" 
+AND tags NOT LIKE "%sosu%" 
+AND tags NOT LIKE "%tyskfransk%" 
+AND tags NOT LIKE "%uu%")
+OR 
+(tags LIKE "%dansk%" 
+OR tags LIKE "%it,%" 
+OR tags LIKE ",%it,%" 
+OR tags LIKE "%,it%" 
+OR tags LIKE "%matematik%" 
+OR tags LIKE "%specialpædagogik%" 
+OR tags LIKE "%Skolepolitik%" 
+OR tags LIKE "%DLF%" 
+OR tags LIKE "%Skoleledelse%" 
+OR tags LIKE "%Psykisk arbejdsmiljø%" 
+OR tags LIKE "%Forskning%"
+OR tags LIKE "%Lærerstuderende%")
+OR
+(tags NOT LIKE "%billedkunst%" 
+AND tags NOT LIKE "%børnehaveklassen%" 
+AND tags NOT LIKE "%dsa%" 
+AND tags NOT LIKE "%engelsk%" 
+AND tags NOT LIKE "%håndværk og design%" 
+AND tags NOT LIKE "%idræt%" 
+AND tags NOT LIKE "%kulturfag%" 
+AND tags NOT LIKE "%lærersenior%" 
+AND tags NOT LIKE "%lærerstuderende%" 
+AND tags NOT LIKE "%madkundskab%" 
+AND tags NOT LIKE "%musik%" 
+AND tags NOT LIKE "%naturfag%" 
+AND tags NOT LIKE "%plc%" 
+AND tags NOT LIKE "%ppr%" 
+AND tags NOT LIKE "%praktik%" 
+AND tags NOT LIKE "%sosu%" 
+AND tags NOT LIKE "%tyskfransk%" 
+AND tags NOT LIKE "%uu%")
+AND 
+(tags NOT LIKE "%dansk%" 
+AND tags NOT LIKE "%it,%" 
+AND tags NOT LIKE ",%it,%" 
+AND tags NOT LIKE "%,it%" 
+AND tags NOT LIKE "%matematik%" 
+AND tags NOT LIKE "%specialpædagogik%" 
+AND tags NOT LIKE "%Skolepolitik%" 
+AND tags NOT LIKE "%DLF%" 
+AND tags NOT LIKE "%Skoleledelse%" 
+AND tags NOT LIKE "%Psykisk arbejdsmiljø%" 
+AND tags NOT LIKE "%Forskning%")
+)
+
+            
+        ),
+        last_30_days_article_published_Agg as
+        (
+            select 
+                siteid as siteid,
+                count(*) as agg
+            from  last_30_days_article_published
+            where   siteid = 11
+            group by 1
+        ),
+        next_clicks_events as
+        (
+            select  
+                e.siteid as siteid,
+                e.postid,
+                sum(hits) as val 
+            from prod.events e
+            join  last_30_days_article_published a on a.id=e.postid
+            where e.Event_Action = 'Next Click'
+            and e.siteid = 11
+			and date 	between MAKEDATE(EXTRACT(YEAR FROM CURDATE()),1)  and  DATE_SUB(cast(NOW() as date), INTERVAL 1 DAY)
+            group by 1,2
+        ),
+        pages as
+        (
+            select
+                p.siteid,
+                p.postid,
+                sum(p.Unique_pageViews) as pageviews
+            from prod.pages p
+            left join last_30_days_article_published l on l.id = p.postid
+			WHERE p.date 	between MAKEDATE(EXTRACT(YEAR FROM CURDATE()),1)  and  DATE_SUB(cast(NOW() as date), INTERVAL 1 DAY)
+            and p.siteid = 11
+            group by 1,2
+        ),
+        next_click_percentage as
+        (
+            select 
+                ncv.siteid,
+                ncv.postid,
+                ncv.val as value,
+                p.pageviews,
+                round((ncv.val/p.pageviews * 100),2) as val
+            from next_clicks_events ncv
+            left join pages p on p.postid = ncv.postid and  p.siteid = ncv.siteid
+        ),
+        agg_data as
+        (
+            select 
+                l.siteid,
+                postid,
+                val,
+                value,
+                pageviews,
+                min_cta,
+                percent_rank() over (ORDER BY case when val>=min_cta then val-min_cta else 0 end) as percentile,
+                case when coalesce (val,0)>=min_cta then val-min_cta else 0 end greater_than_target,
+                case when coalesce (val,0)<min_cta then 1 else 0 end as less_than_target
+                
+            from last_30_days_article_published l
+            left join next_click_percentage a on l.siteid = a.siteid and l.id = a.postid
+            left join prod.goals g on  g.Date = l.fdate
+			WHERE g.date between MAKEDATE(EXTRACT(YEAR FROM CURDATE()),1)  and  DATE_SUB(cast(NOW() as date), INTERVAL 1 DAY)
+            and g.site_id = 11
+        )
+        ,
+        dark_blue as
+        (
+            SELECT
+            category,
+            SUM(value) / SUM(pageviews) * 100 AS percentage
+            FROM (
+                SELECT
+                    postid,
+                    CASE
+                        WHEN percentile >= 0 AND percentile < 0.9 AND less_than_target = 0 THEN 'Approved'
+                        WHEN percentile <= 1 AND percentile >= 0.9 THEN 'Top 10%'
+                        WHEN less_than_target = 1 THEN 'Less_than_target'
+                    END AS category,
+                    value,
+                    pageviews
+                FROM
+                    agg_data
+            ) AS categorized_data
+            WHERE
+                category IS NOT NULL  
+            GROUP BY
+                category
+        ),
+        data_out as
+        (
+            select 
+                a.siteid,
+                'Artikler ift. next click mål' as label,
+                'Artikler publiceret år til dato grupperet i tre kategorier: Artikler under sign-ups mål | Artikler, der nåede sign-ups mål | Top 10% bedste artikler ift. sign-ups. En søjle viser hvor stor andel af artiklerne, der falder i hver gruppe. En søjle viser hvor stor en andel af sign-ups, der er skabt af den gruppe af artikler.' as hint,
+                '"Under mål" , "Over mål" , "Top 10%"' as categories,
+                COALESCE((sum(less_than_target)/agg)*100,0)  as less_than_target,
+                COALESCE((sum(case when percentile<=1 and percentile>=0.9 then 1 else 0 end)/agg)*100,0) as top_10,
+                COALESCE((sum(case when percentile>=0 and percentile<0.9 and less_than_target=0 then 1 else 0 end)/agg)*100,0) as approved,
+                
+                COALESCE((select percentage  from dark_blue where category = 'Less_than_target'),0) as less_than_target_click,
+                COALESCE((select percentage  from dark_blue where category = 'Top 10%'),0) as top_10_clicks,
+                COALESCE((select percentage  from dark_blue where category = 'Approved'),0) as approved_clicks
+                
+            from agg_data a
+            join last_30_days_article_published_Agg ag on ag.siteid=a.siteid
+            where   a.siteid = 11
+            group by 1,2,3,4
+        ),
+		json_data as (
+		select siteid as siteid,label as lab ,hint as ht,categories as cat,CONCAT('{"name": "Andel artikler", "data": [',cast(less_than_target as char),',',cast(approved as char),',',cast(top_10 as char),']}'
+		,',{"name": "Gns. next click for artikler.", "data": [',cast(less_than_target_click as char),',',cast(approved_clicks as char),',',cast(top_10_clicks as char),']}') as series from data_out
+		)
+    SELECT 
+    CONCAT('{','"site":',siteid,',','"data":{"label":"', lab,
+    '","hint":"', ht,
+    '","categories":'
+    ,'[',cat,'],',
+    '"series":','[',series,']}}') as json_data
+  FROM json_data;
+END
+

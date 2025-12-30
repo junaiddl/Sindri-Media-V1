@@ -1,0 +1,221 @@
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: "dbt_project"
+version: "1.0.0"
+
+# This setting configures which "profile" dbt uses for this project.
+profile: "dbt_project"
+
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets: # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+
+# In this example config, we tell dbt to build all models in the example/
+# directory as views. These settings can be overridden in the individual model
+# files using the `{{ config(...) }}` macro.
+models:
+  dbt_project:
+    # Config indicated by + and applies to all files under models/example/
+    example:
+      +materialized: view
+    static:
+      +materialized: view
+    dynamic:
+      +materialized: view
+
+vars:
+  site: 11
+  event_action: "Next Click"
+
+  click_val: '[{"field": "id", "label": "ID"}, {"field": "article", "label": "ARTIKEL"}, {"field": "category", "label": "BRUGERBEHOV"}, {"field": "tags", "label": "Fag", "hidden": true}, {"field": "sektion", "label": "Artikeltype", "hidden": true}, {"field": "date", "label": "PUB DATO"}, {"field": "brugerbehov", "label": "SIDEVISNINGER"}, {"field": "clicks", "label": "Next Click (%) "}]'
+
+  condition:
+    status: true
+    query: |
+      AND (
+        NOT (
+          tags IN (
+            'Billedkunst', 'Børnehaveklassen', 'DSA', 'Engelsk', 'Håndværk og design',
+            'Idræt', 'Kulturfag', 'Lærersenior', 'Lærerstuderende', 'Madkundskab',
+            'Musik', 'Naturfag', 'PLC', 'PPR', 'Praktik', 'SOSU', 'Tysk og fransk', 'UU'
+          )
+          OR categories = 'Seneste nyt'
+        )
+      )
+
+  # Settings for adding columns to existing tables or views.
+  columns_to_add:
+    status: false
+    columns_name: NONE
+    condition: ""
+
+  Tendency:
+    dropdown_cte_naming: ["", "_second", "_third"]
+
+    dropdown_titles: ["Brugerbehov", "Artikeltype", "Fag"]
+
+    dropdown_mapping:
+      Brugerbehov: "userneeds"
+      Artikeltype: "Categories"
+      Fag: "Tags"
+
+    dropdown_values:
+      userneeds:
+        [
+          "Hjælp mig med at forstå",
+          "Forbind mig",
+          "Giv mig en fordel",
+          "Inspirer mig",
+          "Opdater mig",
+          "Underhold mig",
+        ]
+      Categories: ["Artikel", "Seneste nyt", "Guide", "Debat", "Feature"]
+      Tags:
+        [
+          "Billedkunst",
+          "Børnehaveklassen",
+          "Dansk",
+          "Dansk som andetsprog",
+          "DSA",
+          "Engelsk",
+          "Håndværk og design",
+          "Idræt",
+          "It",
+          "Kulturfag",
+          "Madkundskab",
+          "Matematik",
+          "Musik",
+          "Naturfag",
+          "PLC",
+          "PPR",
+          "Praktik",
+          "Senior",
+          "Sosu-undervisere",
+          "Specialpædagogik",
+          "Studie",
+          "Tysk og fransk",
+          "Uddannelsesvejledning",
+          "UU",
+        ]
+
+    dropdown_values_grouping:
+      userneeds:
+        [
+          "Hjælp mig med at forstå",
+          "Forbind mig",
+          "Giv mig en fordel",
+          "Inspirer mig",
+          "Opdater mig",
+          "Underhold mig",
+        ]
+      Categories: ["Artikel", "Seneste nyt", "Guide", "Debat", "Feature"]
+      Tags:
+        [
+          "Billedkunst",
+          "Børnehaveklassen",
+          "Dansk",
+          "Dansk som andetsprog",
+          "DSA",
+          "Engelsk",
+          "Håndværk og design",
+          "Idræt",
+          "It",
+          "Kulturfag",
+          "Madkundskab",
+          "Matematik",
+          "Musik",
+          "Naturfag",
+          "PLC",
+          "PPR",
+          "Praktik",
+          "Senior",
+          "Sosu-undervisere",
+          "Specialpædagogik",
+          "Studie",
+          "Tysk og fransk",
+          "Uddannelsesvejledning",
+          "UU",
+        ]
+
+    order_statements:
+      userneeds: "'Hjælp mig med at forstå','Forbind mig','Giv mig en fordel','Inspirer mig', 'Opdater mig', 'Underhold mig'"
+      Categories: "'Artikel', 'Seneste nyt', 'Guide', 'Debat', 'Feature'"
+      Tags: "'Billedkunst','Børnehaveklassen','Dansk','Dansk som andetsprog','DSA','Engelsk','Håndværk og design','Idræt','It','Kulturfag','Madkundskab','Matematik','Musik','Naturfag','PLC','PPR','Praktik','Senior','SOSU','Sosu-undervisere','Specialpædagogik','Studie','Tysk og fransk','Uddannelsesvejledning','UU'"
+
+  # Configuration for traffic-related operations.
+  Traffic:
+    # Input and output referrer values for line chart queries.
+    input_referrers_linechart: "''Direct'', ''Search'', ''Facebook'', ''Newsletter'', ''NL Red'', ''NL Fag'', ''NL Dag'',''NL DLF'' ,''NL Stud'' "
+    output_referrers_linechart: "''Direct'', ''Search'', ''Facebook'', ''Newsletter''"
+
+    # Domain used in pageview-related queries.
+    domain: "''https://www.folkeskolen.dk/''"
+
+    # Naming conventions for CTEs in dropdowns specific to traffic.
+    dropdown_cte_naming: ["_first", "_second", "_third"]
+
+    # Output referrers for pageview-related operations.
+    output_referrers_pageviews_channel: "''Forside'',''Search'',''Facebook'', ''NL Red'', ''NL Fag'', ''NL Dag'', ''NL DLF'', ''NL Stud''"
+    output_referrers_pageviews_channel_traffic: "''Forside'',''Search'', ''Facebook''"
+    output_referrers_pageviews_channel_newsletter: "''NL Red'', ''NL Fag'', ''NL Dag'',''NL DLF'' ,''NL Stud''"
+
+    # Input tags for pageview-related operations grouped by user needs.
+    input_tags_pageviews_channel:
+      Brugerbehov: "''Hjælp mig med at forstå'',''Forbind mig'',''Giv mig en fordel'',''Inspirer mig'', ''Opdater mig'', ''Underhold mig''"
+      Artikeltype: "''Artikel'', ''Seneste nyt'', ''Guide'', ''Debat'', ''Feature''"
+      Fag: "''Billedkunst'',''Børnehaveklassen'',''Dansk'',''Dansk som andetsprog'',''DSA'',''Engelsk'',''Håndværk og design'',''Idræt'',''It'',''Kulturfag'',''Madkundskab'',''Matematik'',''Musik'',''Naturfag'',''PLC'',''PPR'',''Praktik'',''Senior'',''Sosu-undervisere'',''Specialpædagogik'',''Studie'',''Tysk og fransk'',''Uddannelsesvejledning'',''UU''"
+
+    # Configuration for grouping in traffic channels tables.
+    table_grouping:
+      default_columns: ["tags", "userneeds", "Categories"]
+      grouping_status: false
+      grouping_columns: [""]
+      table_json: |
+        ''category'', coalesce(userneeds, " "),
+        ''tags'', coalesce(Tags," "),
+        ''sektion'', coalesce(Categories, " "),
+      total_columns: 3
+
+    # JSON defining the entry pages structure.
+    entry_pages_json: |
+      [{"field": "id", "label": "ID"}, {"field": "article", "label": "ARTIKEL"}, {"field": "category", "label": "BRUGERBEHOV"}, {"field": "tags", "label": "Fag", "hidden": true}, {"field": "sektion", "label": "Artikeltype", "hidden": true}, {"field": "date", "label": "PUB DATO"}, {"field": "brugerbehov","label": "Besøg"}]
+
+  # Configuration for modifying how tags, user needs, and categories are represented in tables.
+  table_modification:
+    table_modification_tendency:
+      userneeds: |
+        userneeds
+      tags: |
+        tags
+      Categories: |
+        Categories
+
+    table_modification_traffic:
+      userneeds: |
+        userneeds
+      tags: |
+        tags
+      Categories: |
+        Categories
+
+  # Configuration for exploration-related operations.
+  exploration:
+    # Whether to include historic data.
+    historic_data: true
+    # Columns to include in exploration operations.
+    columns: |
+      'category', COALESCE(userneeds, ''), 'sektion', COALESCE(tags,''),

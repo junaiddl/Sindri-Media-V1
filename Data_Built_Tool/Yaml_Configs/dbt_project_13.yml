@@ -1,0 +1,198 @@
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: "dbt_project"
+version: "1.0.0"
+
+# This setting configures which "profile" dbt uses for this project.
+profile: "dbt_project"
+
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets: # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+
+# In this example config, we tell dbt to build all models in the example/
+# directory as views. These settings can be overridden in the individual model
+# files using the `{{ config(...) }}` macro.
+models:
+  dbt_project:
+    # Config indicated by + and applies to all files under models/example/
+    example:
+      +materialized: view
+    static:
+      +materialized: view
+    dynamic:
+      +materialized: view
+
+vars:
+  site: 13
+  event_action: "Next Click"
+
+  click_val: '[{"field": "id", "label": "ID"}, {"field": "article", "label": "ARTIKEL"}, {"field": "category", "label": "BRUGERBEHOV"}, {"field": "sektion", "label": "TYPE", "hidden": true}, {"field": "tags", "label": "Tags", "hidden": true}, {"field": "date", "label": "DATO"}, {"field": "brugerbehov", "label": "SIDEVISNINGER"}, {"field": "clicks", "label": "NEXT CLICK (%)"}]'
+
+  condition:
+    status: false
+    query: ""
+
+  # Settings for adding columns to existing tables or views.
+  columns_to_add:
+    status: false
+    columns_name: NONE
+    condition: ""
+
+  Tendency:
+    dropdown_cte_naming: ["", "_second", "_third"]
+
+    dropdown_titles: ["Brugerbehov", "Type", "Branche"]
+
+    dropdown_mapping:
+      Brugerbehov: "userneeds"
+      Type: "Categories"
+      Branche: "Tags"
+
+    dropdown_values:
+      userneeds:
+        [
+          "Opdater mig",
+          "Forbind mig",
+          "Hjælp mig med at forstå",
+          "Help mig med at forsta",
+          "Hjælp mig med at forsta",
+          "Giv mig en fordel",
+          "Underhold mig",
+          "Inspirer mig",
+        ]
+      Categories:
+        [
+          "Nyhed",
+          "Medlemsinfo",
+          "Reportage",
+          "Artikel",
+          "Det ku' ske for dig",
+          "Jeg mener",
+          "Videoartikel",
+        ]
+      Tags:
+        [
+          "Slagterindustri",
+          "Fødevareindustri",
+          "Mejeri",
+          "Butik",
+          "Alle brancher",
+        ]
+
+    dropdown_values_grouping:
+      userneeds:
+        [
+          "Opdater mig",
+          "Forbind mig",
+          "Hjælp mig med at forstå",
+          "Hjælp mig med at forstå",
+          "Hjælp mig med at forstå",
+          "Giv mig en fordel",
+          "Underhold mig",
+          "Inspirer mig",
+        ]
+      Categories:
+        [
+          "Nyhed",
+          "Medlemsinfo",
+          "Reportage",
+          "Artikel",
+          "Det ku' ske for dig",
+          "Jeg mener",
+          "Videoartikel",
+        ]
+      Tags:
+        [
+          "Slagterindustri",
+          "Fødevareindustri",
+          "Mejeri",
+          "Butik",
+          "Alle brancher",
+        ]
+    order_statements:
+      userneeds: "'Opdater mig','Forbind mig','Hjælp mig med at forstå','Giv mig en fordel', 'Underhold mig', 'Inspirer mig'"
+      Categories: "'Nyhed','Medlemsinfo','Reportage','Artikel','Det ku'' ske for dig','Jeg mener','Videoartikel'"
+      Tags: "'Slagterindustri','Fødevareindustri','Mejeri','Butik','Alle brancher'"
+
+  # Configuration for traffic-related operations.
+  Traffic:
+    # Input and output referrer values for line chart queries.
+    input_referrers_linechart: "''Direct'', ''Search'', ''Facebook'', ''Newsletter'', ''NL Medlem'', ''NL fra NNF''"
+    output_referrers_linechart: "''Direct'', ''Search'', ''Facebook'', ''Newsletter''"
+
+    # Domain used in pageview-related queries.
+    domain: "''https://nnf.dk/''"
+
+    # Naming conventions for CTEs in dropdowns specific to traffic.
+    dropdown_cte_naming: ["_first", "_second", "_third"]
+
+    # Output referrers for pageview-related operations.
+    output_referrers_pageviews_channel: "''Forside'',''Search'',''Facebook'', ''NL Medlem'', ''NL fra NNF''"
+    output_referrers_pageviews_channel_traffic: "''Forside'',''Search'', ''Facebook''"
+    output_referrers_pageviews_channel_newsletter: "''NL Medlem'', ''NL fra NNF''"
+
+    # Input tags for pageview-related operations grouped by user needs.
+    input_tags_pageviews_channel:
+      Brugerbehov: "''Opdater mig'',''Forbind mig'',''Hjælp mig med at forstå'',''Giv mig en fordel'', ''Underhold mig'', ''Inspirer mig''"
+      Type: "''Nyhed'',''Medlemsinfo'',''Reportage'',''Artikel'',''Det ku'' ske for dig'',''Jeg mener'',''Videoartikel''"
+      Branche: "''Slagterindustri'',''Fødevareindustri'',''Mejeri'',''Butik'',''Alle brancher''"
+
+    # Configuration for grouping in traffic channels tables.
+    table_grouping:
+      # Default columns that require no grouping, directly reflecting prod.site_archive_post.
+      default_columns: ["tags", "userneeds", "Categories"]
+      # Status indicator for whether new columns should be created.
+      grouping_status: false
+      # Names of the new columns to be created, if applicable.
+      grouping_columns: [""]
+      # JSON for outputting the table according to column mappings.
+      table_json: |
+        ''category'', coalesce(userneeds, " "),
+        ''tags'', coalesce(Tags," "),
+        ''sektion'', coalesce(Categories, " "),
+      total_columns: 3
+
+    # JSON defining the entry pages structure.
+    entry_pages_json: |
+      [{"field": "id", "label": "ID"}, {"field": "article", "label": "ARTIKEL"}, {"field": "category", "label": "BRUGERBEHOV"}, {"field": "sektion", "label": "TYPE", "hidden": true}, {"field": "tags", "label": "Tags", "hidden": true}, {"field": "date", "label": "DATO"},{"field": "brugerbehov","label": "Besøg"}]
+
+  # Configuration for modifying how tags, user needs, and categories are represented in tables.
+  table_modification:
+    table_modification_tendency:
+      userneeds: |
+        userneeds
+      tags: |
+        tags
+      Categories: |
+        Categories
+
+    table_modification_traffic:
+      userneeds: |
+        userneeds
+      tags: |
+        tags
+      Categories: |
+        Categories
+
+  # Configuration for exploration-related operations.
+  exploration:
+    # Whether to include historic data.
+    historic_data: true
+    # Columns to include in exploration operations.
+    columns: |
+      'category', COALESCE(userneeds, ''), 'sektion', COALESCE(tags,''),

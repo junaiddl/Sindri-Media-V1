@@ -1,0 +1,171 @@
+{
+  "site": 19,
+  "uge": "uge39",
+  "prev_uge": "uge38",
+  "scenario1": "1",
+  "scenario2": "12",
+  "data1": {
+    "table1": {
+      "data": {
+        "besog": {
+          "total": 963,
+          "afvigelse_ift_maal": "-8.3%",
+          "udvikling_ift_forrige_uge": "-6.4%"
+        },
+        "sidevisninger": {
+          "total": 1428,
+          "afvigelse_ift_maal": "-18.4%",
+          "udvikling_ift_forrige_uge": "-4.5%"
+        },
+        "Next Click (%)": {
+          "total": 29.9,
+          "afvigelse_ift_maal": "+497.9%",
+          "udvikling_ift_forrige_uge": "-4.5%"
+        }
+      }
+    },
+    "table2": {
+      "data": [
+        {
+          "kanal": "Search",
+          "besog_uge": 328,
+          "andel_af_total": "34.1%",
+          "udvikling_ift_forrige_uge": "-6.0%"
+        },
+        {
+          "kanal": "Direct",
+          "besog_uge": 361,
+          "andel_af_total": "37.5%",
+          "udvikling_ift_forrige_uge": "-5.7%"
+        },
+        {
+          "kanal": "Others",
+          "besog_uge": 141,
+          "andel_af_total": "14.6%",
+          "udvikling_ift_forrige_uge": "-19.4%"
+        },
+        {
+          "kanal": "Newsletter",
+          "besog_uge": 133,
+          "andel_af_total": "13.8%",
+          "udvikling_ift_forrige_uge": "+9.0%"
+        }
+      ]
+    },
+    "table3": {
+      "antal_artikler": 3,
+      "gns_next_click_%": 12.3,
+      "gns_sidevisninger": 51.7
+    },
+    "table4": {
+      "over_et_maal": 66.7,
+      "over_begge_maal": 33.3,
+      "under_begge_maal": 0
+    },
+    "table5": [
+      {
+        "andel": 66.7,
+        "brugerbehov": "Hjælp mig med at forstå",
+        "gns_next_click_%": 11.7,
+        "gns_sidevisninger": 64
+      },
+      {
+        "andel": 33.3,
+        "brugerbehov": "Inspirer mig",
+        "gns_next_click_%": 14.8,
+        "gns_sidevisninger": 27
+      }
+    ]
+  },
+  "data2": {
+    "goal": {
+      "min_cta": "5",
+      "min_pageviews": "50"
+    },
+    "last_week_articles": [
+      {
+        "tags": "Forskning & innovation, Sundhedspolitik",
+        "post_id": "33951",
+        "pub_date": "2025-09-22",
+        "pageviews": 84,
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Nyheder",
+        "next_click_%": 10.7142857
+      },
+      {
+        "tags": "",
+        "post_id": "34273",
+        "pub_date": "2025-09-23",
+        "pageviews": 21,
+        "userneeds": "Inspirer mig",
+        "categories": "Event",
+        "next_click_%": 9.5238095
+      },
+      {
+        "tags": "Apoteksmedicin, Sundhedspolitik, Vacciner",
+        "post_id": "34286",
+        "pub_date": "2025-09-24",
+        "pageviews": 20,
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "next_click_%": 20.0
+      }
+    ],
+    "two_weeks_ago_articles": [
+      {
+        "tags": "Adgang til medicin, Sygehusmedicin",
+        "post_id": "34019",
+        "pub_date": "2025-09-09",
+        "pageviews": 36,
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "next_click_%": 13.8888888
+      },
+      {
+        "tags": "Foreningen Lif",
+        "post_id": "34053",
+        "pub_date": "2025-09-10",
+        "pageviews": 220,
+        "userneeds": "Inspirer mig",
+        "categories": "Job i Lif, Nyheder",
+        "next_click_%": 18.1818181
+      },
+      {
+        "tags": "Forskning & innovation, Life science",
+        "post_id": "34064",
+        "pub_date": "2025-09-10",
+        "pageviews": 43,
+        "userneeds": "",
+        "categories": "Debat, Nyheder",
+        "next_click_%": 9.3023255
+      },
+      {
+        "tags": "Apoteksmedicin",
+        "post_id": "34197",
+        "pub_date": "2025-09-17",
+        "pageviews": 71,
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Nyheder",
+        "next_click_%": 29.5774647
+      },
+      {
+        "tags": "Foreningen Lif",
+        "post_id": "34216",
+        "pub_date": "2025-09-17",
+        "pageviews": 33,
+        "userneeds": "Opdater mig",
+        "categories": "Nyheder",
+        "next_click_%": 3.030303
+      },
+      {
+        "tags": "EU, Forskning & innovation, Politik",
+        "post_id": "34248",
+        "pub_date": "2025-09-18",
+        "pageviews": 40,
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Nyheder",
+        "next_click_%": 7.5
+      }
+    ]
+  }
+}

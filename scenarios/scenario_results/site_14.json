@@ -1,0 +1,1269 @@
+{
+  "site": 14,
+  "uge": "uge39",
+  "prev_uge": "uge38",
+  "scenario1": "12",
+  "scenario2": "16",
+  "data1": {
+    "goal": {
+      "min_cta": "10",
+      "min_pageviews": "3000"
+    },
+    "last_week_articles": [
+      {
+        "tags": "",
+        "post_id": "165174",
+        "pub_date": "2025-09-22",
+        "pageviews": 3902,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 9.0466427
+      },
+      {
+        "tags": "",
+        "post_id": "165185",
+        "pub_date": "2025-09-25",
+        "pageviews": 3254,
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "next_click_%": 11.8930547
+      },
+      {
+        "tags": "",
+        "post_id": "168309",
+        "pub_date": "2025-09-25",
+        "pageviews": 1922,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "next_click_%": 10.0936524
+      },
+      {
+        "tags": "Ulighed",
+        "post_id": "168730",
+        "pub_date": "2025-09-22",
+        "pageviews": 5140,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 8.2101167
+      },
+      {
+        "tags": "",
+        "post_id": "168906",
+        "pub_date": "2025-09-23",
+        "pageviews": 11138,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 6.9042916
+      },
+      {
+        "tags": "",
+        "post_id": "168923",
+        "pub_date": "2025-09-22",
+        "pageviews": 1796,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "next_click_%": 14.5322939
+      },
+      {
+        "tags": "Privatøkonomi",
+        "post_id": "168954",
+        "pub_date": "2025-09-24",
+        "pageviews": 6546,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "next_click_%": 10.0366636
+      },
+      {
+        "tags": "Privatøkonomi",
+        "post_id": "168982",
+        "pub_date": "2025-09-24",
+        "pageviews": 1514,
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "next_click_%": 13.34214
+      },
+      {
+        "tags": "Privatøkonomi",
+        "post_id": "169184",
+        "pub_date": "2025-09-26",
+        "pageviews": 2381,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "next_click_%": 7.8118437
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "169269",
+        "pub_date": "2025-09-25",
+        "pageviews": 2488,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 9.4453376
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "169413",
+        "pub_date": "2025-09-26",
+        "pageviews": 1525,
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "next_click_%": 10.6885245
+      },
+      {
+        "tags": "Fagligt",
+        "post_id": "169507",
+        "pub_date": "2025-09-23",
+        "pageviews": 2147,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 11.0852352
+      },
+      {
+        "tags": "Privatøkonomi",
+        "post_id": "169544",
+        "pub_date": "2025-09-26",
+        "pageviews": 14270,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "next_click_%": 12.4667133
+      },
+      {
+        "tags": "",
+        "post_id": "169558",
+        "pub_date": "2025-09-23",
+        "pageviews": 409,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 23.7163814
+      },
+      {
+        "tags": "Ulighed",
+        "post_id": "169597",
+        "pub_date": "2025-09-23",
+        "pageviews": 1934,
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Artikel",
+        "next_click_%": 7.9110651
+      },
+      {
+        "tags": "",
+        "post_id": "169600",
+        "pub_date": "2025-09-26",
+        "pageviews": 3951,
+        "userneeds": "Opdater mig",
+        "categories": "Guide",
+        "next_click_%": 14.3001771
+      },
+      {
+        "tags": "Social dumping",
+        "post_id": "169720",
+        "pub_date": "2025-09-24",
+        "pageviews": 4473,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 7.3552425
+      },
+      {
+        "tags": "",
+        "post_id": "169725",
+        "pub_date": "2025-09-23",
+        "pageviews": 2353,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 9.7322566
+      },
+      {
+        "tags": "",
+        "post_id": "170070",
+        "pub_date": "2025-09-26",
+        "pageviews": 978,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 12.8834355
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "170099",
+        "pub_date": "2025-09-27",
+        "pageviews": 461,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 19.956616
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "170109",
+        "pub_date": "2025-09-27",
+        "pageviews": 82,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 32.9268292
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "170113",
+        "pub_date": "2025-09-27",
+        "pageviews": 13,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 0
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "170148",
+        "pub_date": "2025-09-27",
+        "pageviews": 28,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 39.2857142
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "170158",
+        "pub_date": "2025-09-28",
+        "pageviews": 142,
+        "userneeds": "Underhold mig",
+        "categories": "Artikel",
+        "next_click_%": 42.9577464
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "170211",
+        "pub_date": "2025-09-27",
+        "pageviews": 381,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "next_click_%": 33.0708661
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "170240",
+        "pub_date": "2025-09-27",
+        "pageviews": 54,
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Artikel",
+        "next_click_%": 29.6296296
+      },
+      {
+        "tags": "Fagligt",
+        "post_id": "170290",
+        "pub_date": "2025-09-28",
+        "pageviews": 27,
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "next_click_%": 33.3333333
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "170292",
+        "pub_date": "2025-09-28",
+        "pageviews": 17,
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Artikel",
+        "next_click_%": 11.7647058
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "170321",
+        "pub_date": "2025-09-28",
+        "pageviews": 29,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 24.137931
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "170325",
+        "pub_date": "2025-09-28",
+        "pageviews": 22,
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "next_click_%": 40.9090909
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "170381",
+        "pub_date": "2025-09-28",
+        "pageviews": 27,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 44.4444444
+      }
+    ],
+    "two_weeks_ago_articles": [
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "165074",
+        "pub_date": "2025-09-15",
+        "pageviews": 8492,
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "next_click_%": 12.4116815
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "165096",
+        "pub_date": "2025-09-16",
+        "pageviews": 4662,
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Artikel",
+        "next_click_%": 10.9609609
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "165127",
+        "pub_date": "2025-09-17",
+        "pageviews": 2976,
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "next_click_%": 12.6680107
+      },
+      {
+        "tags": "",
+        "post_id": "165158",
+        "pub_date": "2025-09-19",
+        "pageviews": 4349,
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "next_click_%": 10.8300758
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "165470",
+        "pub_date": "2025-09-15",
+        "pageviews": 4777,
+        "userneeds": "Forbind mig",
+        "categories": "Digidoc",
+        "next_click_%": 11.1576303
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "166229",
+        "pub_date": "2025-09-09",
+        "pageviews": 8562,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 9.156739
+      },
+      {
+        "tags": "Privatøkonomi",
+        "post_id": "166651",
+        "pub_date": "2025-09-12",
+        "pageviews": 5188,
+        "userneeds": "Opdater mig",
+        "categories": "Guide",
+        "next_click_%": 10.6013878
+      },
+      {
+        "tags": "Ulighed",
+        "post_id": "166654",
+        "pub_date": "2025-09-16",
+        "pageviews": 1914,
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "next_click_%": 12.9049111
+      },
+      {
+        "tags": "Uddannelse",
+        "post_id": "166848",
+        "pub_date": "2025-09-18",
+        "pageviews": 3039,
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "next_click_%": 8.3251069
+      },
+      {
+        "tags": "Social dumping",
+        "post_id": "166856",
+        "pub_date": "2025-09-19",
+        "pageviews": 2696,
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Artikel",
+        "next_click_%": 9.8664688
+      },
+      {
+        "tags": "",
+        "post_id": "166861",
+        "pub_date": "2025-09-09",
+        "pageviews": 889,
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "next_click_%": 7.7615298
+      },
+      {
+        "tags": "Fagligt",
+        "post_id": "166880",
+        "pub_date": "2025-09-08",
+        "pageviews": 1737,
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "next_click_%": 11.9746689
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "167020",
+        "pub_date": "2025-09-08",
+        "pageviews": 906,
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "next_click_%": 15.5629139
+      },
+      {
+        "tags": "",
+        "post_id": "167347",
+        "pub_date": "2025-09-08",
+        "pageviews": 1312,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 9.1463414
+      },
+      {
+        "tags": "Privatøkonomi",
+        "post_id": "167487",
+        "pub_date": "2025-09-10",
+        "pageviews": 11539,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "next_click_%": 8.163619
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "167497",
+        "pub_date": "2025-09-18",
+        "pageviews": 5307,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 7.7444884
+      },
+      {
+        "tags": "Privatøkonomi",
+        "post_id": "167576",
+        "pub_date": "2025-09-12",
+        "pageviews": 964,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "next_click_%": 25.726141
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "167596",
+        "pub_date": "2025-09-09",
+        "pageviews": 5848,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "next_click_%": 7.4555403
+      },
+      {
+        "tags": "Fagligt",
+        "post_id": "167742",
+        "pub_date": "2025-09-09",
+        "pageviews": 10678,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 7.5201348
+      },
+      {
+        "tags": "Privatøkonomi",
+        "post_id": "167756",
+        "pub_date": "2025-09-12",
+        "pageviews": 7427,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "next_click_%": 12.117948
+      },
+      {
+        "tags": "Social dumping",
+        "post_id": "167842",
+        "pub_date": "2025-09-12",
+        "pageviews": 5826,
+        "userneeds": "Opdater mig",
+        "categories": "Guide",
+        "next_click_%": 13.920357
+      },
+      {
+        "tags": "Fagligt",
+        "post_id": "167869",
+        "pub_date": "2025-09-10",
+        "pageviews": 5090,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 13.0844793
+      },
+      {
+        "tags": "Privatøkonomi",
+        "post_id": "167913",
+        "pub_date": "2025-09-17",
+        "pageviews": 2590,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "next_click_%": 9.2664092
+      },
+      {
+        "tags": "Fagligt",
+        "post_id": "167942",
+        "pub_date": "2025-09-11",
+        "pageviews": 3761,
+        "userneeds": "Opdater mig",
+        "categories": "Guide",
+        "next_click_%": 8.7476734
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "167988",
+        "pub_date": "2025-09-10",
+        "pageviews": 2011,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 16.3102933
+      },
+      {
+        "tags": "Fagligt",
+        "post_id": "167997",
+        "pub_date": "2025-09-10",
+        "pageviews": 11908,
+        "userneeds": "Opdater mig",
+        "categories": "Guide",
+        "next_click_%": 10.8414511
+      },
+      {
+        "tags": "Privatøkonomi",
+        "post_id": "168114",
+        "pub_date": "2025-09-12",
+        "pageviews": 2114,
+        "userneeds": "Opdater mig",
+        "categories": "Guide",
+        "next_click_%": 15.846736
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "168120",
+        "pub_date": "2025-09-11",
+        "pageviews": 2545,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 10.8055009
+      },
+      {
+        "tags": "Fagligt",
+        "post_id": "168191",
+        "pub_date": "2025-09-11",
+        "pageviews": 1636,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "next_click_%": 14.792176
+      },
+      {
+        "tags": "Fagligt",
+        "post_id": "168225",
+        "pub_date": "2025-09-12",
+        "pageviews": 4166,
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "next_click_%": 18.0988958
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "168315",
+        "pub_date": "2025-09-17",
+        "pageviews": 3233,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 9.093721
+      },
+      {
+        "tags": "Privatøkonomi",
+        "post_id": "168432",
+        "pub_date": "2025-09-19",
+        "pageviews": 2854,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "next_click_%": 12.6839523
+      },
+      {
+        "tags": "Fagligt",
+        "post_id": "168446",
+        "pub_date": "2025-09-15",
+        "pageviews": 2123,
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "next_click_%": 17.239755
+      },
+      {
+        "tags": "Social dumping",
+        "post_id": "168511",
+        "pub_date": "2025-09-16",
+        "pageviews": 3061,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 9.5720352
+      },
+      {
+        "tags": "",
+        "post_id": "168527",
+        "pub_date": "2025-09-18",
+        "pageviews": 580,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 19.6551724
+      },
+      {
+        "tags": "Social dumping",
+        "post_id": "168697",
+        "pub_date": "2025-09-16",
+        "pageviews": 812,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 15.1477832
+      },
+      {
+        "tags": "Uddannelse",
+        "post_id": "168945",
+        "pub_date": "2025-09-19",
+        "pageviews": 1284,
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "next_click_%": 13.0062305
+      },
+      {
+        "tags": "",
+        "post_id": "169048",
+        "pub_date": "2025-09-18",
+        "pageviews": 871,
+        "userneeds": "Inspirer mig",
+        "categories": "Guide",
+        "next_click_%": 6.0849598
+      }
+    ]
+  },
+  "data2": {
+    "goal": {
+      "min_cta": "10",
+      "min_pageviews": "3000"
+    },
+    "last_week_articles": [
+      {
+        "tags": "",
+        "post_id": "165174",
+        "pub_date": "2025-09-22",
+        "pageviews": 3902,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 9.0466427
+      },
+      {
+        "tags": "",
+        "post_id": "165185",
+        "pub_date": "2025-09-25",
+        "pageviews": 3254,
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "next_click_%": 11.8930547
+      },
+      {
+        "tags": "",
+        "post_id": "168309",
+        "pub_date": "2025-09-25",
+        "pageviews": 1922,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "next_click_%": 10.0936524
+      },
+      {
+        "tags": "Ulighed",
+        "post_id": "168730",
+        "pub_date": "2025-09-22",
+        "pageviews": 5140,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 8.2101167
+      },
+      {
+        "tags": "",
+        "post_id": "168906",
+        "pub_date": "2025-09-23",
+        "pageviews": 11138,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 6.9042916
+      },
+      {
+        "tags": "",
+        "post_id": "168923",
+        "pub_date": "2025-09-22",
+        "pageviews": 1796,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "next_click_%": 14.5322939
+      },
+      {
+        "tags": "Privatøkonomi",
+        "post_id": "168954",
+        "pub_date": "2025-09-24",
+        "pageviews": 6546,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "next_click_%": 10.0366636
+      },
+      {
+        "tags": "Privatøkonomi",
+        "post_id": "168982",
+        "pub_date": "2025-09-24",
+        "pageviews": 1514,
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "next_click_%": 13.34214
+      },
+      {
+        "tags": "Privatøkonomi",
+        "post_id": "169184",
+        "pub_date": "2025-09-26",
+        "pageviews": 2381,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "next_click_%": 7.8118437
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "169269",
+        "pub_date": "2025-09-25",
+        "pageviews": 2488,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 9.4453376
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "169413",
+        "pub_date": "2025-09-26",
+        "pageviews": 1525,
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "next_click_%": 10.6885245
+      },
+      {
+        "tags": "Fagligt",
+        "post_id": "169507",
+        "pub_date": "2025-09-23",
+        "pageviews": 2147,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 11.0852352
+      },
+      {
+        "tags": "Privatøkonomi",
+        "post_id": "169544",
+        "pub_date": "2025-09-26",
+        "pageviews": 14270,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "next_click_%": 12.4667133
+      },
+      {
+        "tags": "",
+        "post_id": "169558",
+        "pub_date": "2025-09-23",
+        "pageviews": 409,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 23.7163814
+      },
+      {
+        "tags": "Ulighed",
+        "post_id": "169597",
+        "pub_date": "2025-09-23",
+        "pageviews": 1934,
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Artikel",
+        "next_click_%": 7.9110651
+      },
+      {
+        "tags": "",
+        "post_id": "169600",
+        "pub_date": "2025-09-26",
+        "pageviews": 3951,
+        "userneeds": "Opdater mig",
+        "categories": "Guide",
+        "next_click_%": 14.3001771
+      },
+      {
+        "tags": "Social dumping",
+        "post_id": "169720",
+        "pub_date": "2025-09-24",
+        "pageviews": 4473,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 7.3552425
+      },
+      {
+        "tags": "",
+        "post_id": "169725",
+        "pub_date": "2025-09-23",
+        "pageviews": 2353,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 9.7322566
+      },
+      {
+        "tags": "",
+        "post_id": "170070",
+        "pub_date": "2025-09-26",
+        "pageviews": 978,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 12.8834355
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "170099",
+        "pub_date": "2025-09-27",
+        "pageviews": 461,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 19.956616
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "170109",
+        "pub_date": "2025-09-27",
+        "pageviews": 82,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 32.9268292
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "170113",
+        "pub_date": "2025-09-27",
+        "pageviews": 13,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 0
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "170148",
+        "pub_date": "2025-09-27",
+        "pageviews": 28,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 39.2857142
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "170158",
+        "pub_date": "2025-09-28",
+        "pageviews": 142,
+        "userneeds": "Underhold mig",
+        "categories": "Artikel",
+        "next_click_%": 42.9577464
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "170211",
+        "pub_date": "2025-09-27",
+        "pageviews": 381,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "next_click_%": 33.0708661
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "170240",
+        "pub_date": "2025-09-27",
+        "pageviews": 54,
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Artikel",
+        "next_click_%": 29.6296296
+      },
+      {
+        "tags": "Fagligt",
+        "post_id": "170290",
+        "pub_date": "2025-09-28",
+        "pageviews": 27,
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "next_click_%": 33.3333333
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "170292",
+        "pub_date": "2025-09-28",
+        "pageviews": 17,
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Artikel",
+        "next_click_%": 11.7647058
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "170321",
+        "pub_date": "2025-09-28",
+        "pageviews": 29,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 24.137931
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "170325",
+        "pub_date": "2025-09-28",
+        "pageviews": 22,
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "next_click_%": 40.9090909
+      },
+      {
+        "tags": "Kongres 2025",
+        "post_id": "170381",
+        "pub_date": "2025-09-28",
+        "pageviews": 27,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 44.4444444
+      }
+    ],
+    "two_weeks_ago_articles": [
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "165074",
+        "pub_date": "2025-09-15",
+        "pageviews": 8492,
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "next_click_%": 12.4116815
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "165096",
+        "pub_date": "2025-09-16",
+        "pageviews": 4662,
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Artikel",
+        "next_click_%": 10.9609609
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "165127",
+        "pub_date": "2025-09-17",
+        "pageviews": 2976,
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "next_click_%": 12.6680107
+      },
+      {
+        "tags": "",
+        "post_id": "165158",
+        "pub_date": "2025-09-19",
+        "pageviews": 4349,
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "next_click_%": 10.8300758
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "165470",
+        "pub_date": "2025-09-15",
+        "pageviews": 4777,
+        "userneeds": "Forbind mig",
+        "categories": "Digidoc",
+        "next_click_%": 11.1576303
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "166229",
+        "pub_date": "2025-09-09",
+        "pageviews": 8562,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 9.156739
+      },
+      {
+        "tags": "Privatøkonomi",
+        "post_id": "166651",
+        "pub_date": "2025-09-12",
+        "pageviews": 5188,
+        "userneeds": "Opdater mig",
+        "categories": "Guide",
+        "next_click_%": 10.6013878
+      },
+      {
+        "tags": "Ulighed",
+        "post_id": "166654",
+        "pub_date": "2025-09-16",
+        "pageviews": 1914,
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "next_click_%": 12.9049111
+      },
+      {
+        "tags": "Uddannelse",
+        "post_id": "166848",
+        "pub_date": "2025-09-18",
+        "pageviews": 3039,
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "next_click_%": 8.3251069
+      },
+      {
+        "tags": "Social dumping",
+        "post_id": "166856",
+        "pub_date": "2025-09-19",
+        "pageviews": 2696,
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Artikel",
+        "next_click_%": 9.8664688
+      },
+      {
+        "tags": "",
+        "post_id": "166861",
+        "pub_date": "2025-09-09",
+        "pageviews": 889,
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "next_click_%": 7.7615298
+      },
+      {
+        "tags": "Fagligt",
+        "post_id": "166880",
+        "pub_date": "2025-09-08",
+        "pageviews": 1737,
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "next_click_%": 11.9746689
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "167020",
+        "pub_date": "2025-09-08",
+        "pageviews": 906,
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "next_click_%": 15.5629139
+      },
+      {
+        "tags": "",
+        "post_id": "167347",
+        "pub_date": "2025-09-08",
+        "pageviews": 1312,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 9.1463414
+      },
+      {
+        "tags": "Privatøkonomi",
+        "post_id": "167487",
+        "pub_date": "2025-09-10",
+        "pageviews": 11539,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "next_click_%": 8.163619
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "167497",
+        "pub_date": "2025-09-18",
+        "pageviews": 5307,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 7.7444884
+      },
+      {
+        "tags": "Privatøkonomi",
+        "post_id": "167576",
+        "pub_date": "2025-09-12",
+        "pageviews": 964,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "next_click_%": 25.726141
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "167596",
+        "pub_date": "2025-09-09",
+        "pageviews": 5848,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "next_click_%": 7.4555403
+      },
+      {
+        "tags": "Fagligt",
+        "post_id": "167742",
+        "pub_date": "2025-09-09",
+        "pageviews": 10678,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 7.5201348
+      },
+      {
+        "tags": "Privatøkonomi",
+        "post_id": "167756",
+        "pub_date": "2025-09-12",
+        "pageviews": 7427,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "next_click_%": 12.117948
+      },
+      {
+        "tags": "Social dumping",
+        "post_id": "167842",
+        "pub_date": "2025-09-12",
+        "pageviews": 5826,
+        "userneeds": "Opdater mig",
+        "categories": "Guide",
+        "next_click_%": 13.920357
+      },
+      {
+        "tags": "Fagligt",
+        "post_id": "167869",
+        "pub_date": "2025-09-10",
+        "pageviews": 5090,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 13.0844793
+      },
+      {
+        "tags": "Privatøkonomi",
+        "post_id": "167913",
+        "pub_date": "2025-09-17",
+        "pageviews": 2590,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "next_click_%": 9.2664092
+      },
+      {
+        "tags": "Fagligt",
+        "post_id": "167942",
+        "pub_date": "2025-09-11",
+        "pageviews": 3761,
+        "userneeds": "Opdater mig",
+        "categories": "Guide",
+        "next_click_%": 8.7476734
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "167988",
+        "pub_date": "2025-09-10",
+        "pageviews": 2011,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 16.3102933
+      },
+      {
+        "tags": "Fagligt",
+        "post_id": "167997",
+        "pub_date": "2025-09-10",
+        "pageviews": 11908,
+        "userneeds": "Opdater mig",
+        "categories": "Guide",
+        "next_click_%": 10.8414511
+      },
+      {
+        "tags": "Privatøkonomi",
+        "post_id": "168114",
+        "pub_date": "2025-09-12",
+        "pageviews": 2114,
+        "userneeds": "Opdater mig",
+        "categories": "Guide",
+        "next_click_%": 15.846736
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "168120",
+        "pub_date": "2025-09-11",
+        "pageviews": 2545,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 10.8055009
+      },
+      {
+        "tags": "Fagligt",
+        "post_id": "168191",
+        "pub_date": "2025-09-11",
+        "pageviews": 1636,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "next_click_%": 14.792176
+      },
+      {
+        "tags": "Fagligt",
+        "post_id": "168225",
+        "pub_date": "2025-09-12",
+        "pageviews": 4166,
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "next_click_%": 18.0988958
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "168315",
+        "pub_date": "2025-09-17",
+        "pageviews": 3233,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 9.093721
+      },
+      {
+        "tags": "Privatøkonomi",
+        "post_id": "168432",
+        "pub_date": "2025-09-19",
+        "pageviews": 2854,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "next_click_%": 12.6839523
+      },
+      {
+        "tags": "Fagligt",
+        "post_id": "168446",
+        "pub_date": "2025-09-15",
+        "pageviews": 2123,
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "next_click_%": 17.239755
+      },
+      {
+        "tags": "Social dumping",
+        "post_id": "168511",
+        "pub_date": "2025-09-16",
+        "pageviews": 3061,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 9.5720352
+      },
+      {
+        "tags": "",
+        "post_id": "168527",
+        "pub_date": "2025-09-18",
+        "pageviews": 580,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 19.6551724
+      },
+      {
+        "tags": "Social dumping",
+        "post_id": "168697",
+        "pub_date": "2025-09-16",
+        "pageviews": 812,
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "next_click_%": 15.1477832
+      },
+      {
+        "tags": "Uddannelse",
+        "post_id": "168945",
+        "pub_date": "2025-09-19",
+        "pageviews": 1284,
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "next_click_%": 13.0062305
+      },
+      {
+        "tags": "",
+        "post_id": "169048",
+        "pub_date": "2025-09-18",
+        "pageviews": 871,
+        "userneeds": "Inspirer mig",
+        "categories": "Guide",
+        "next_click_%": 6.0849598
+      }
+    ]
+  }
+}

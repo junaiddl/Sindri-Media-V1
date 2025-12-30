@@ -1,0 +1,189 @@
+{
+  "site": 20,
+  "uge": "uge39",
+  "prev_uge": "uge38",
+  "scenario1": "12",
+  "scenario2": "16",
+  "data1": {
+    "goal": {
+      "min_cta": "5",
+      "min_pageviews": "300"
+    },
+    "last_week_articles": [
+      {
+        "tags": "Boligorganisationer",
+        "post_id": "3102",
+        "pub_date": "2025-09-24",
+        "pageviews": 128,
+        "userneeds": "Inspirer mig",
+        "categories": "",
+        "next_click_%": 4.6875
+      },
+      {
+        "tags": "Boligsocialt",
+        "post_id": "3103",
+        "pub_date": "2025-09-24",
+        "pageviews": 667,
+        "userneeds": "Forbind mig",
+        "categories": "",
+        "next_click_%": 4.9475262
+      },
+      {
+        "tags": "Boligsocialt",
+        "post_id": "3104",
+        "pub_date": "2025-09-24",
+        "pageviews": 331,
+        "userneeds": "Forbind mig",
+        "categories": "",
+        "next_click_%": 12.9909365
+      }
+    ],
+    "two_weeks_ago_articles": [
+      {
+        "tags": "Boligorganisationer",
+        "post_id": "3096",
+        "pub_date": "2025-09-10",
+        "pageviews": 1240,
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "next_click_%": 5.3225806
+      },
+      {
+        "tags": "Energi og klima",
+        "post_id": "3097",
+        "pub_date": "2025-09-10",
+        "pageviews": 244,
+        "userneeds": "Inspirer mig",
+        "categories": "",
+        "next_click_%": 3.6885245
+      },
+      {
+        "tags": "Boligorganisationer",
+        "post_id": "3098",
+        "pub_date": "2025-09-10",
+        "pageviews": 485,
+        "userneeds": "Opdater mig",
+        "categories": "",
+        "next_click_%": 3.298969
+      },
+      {
+        "tags": "Beboerdemokrati",
+        "post_id": "3099",
+        "pub_date": "2025-09-17",
+        "pageviews": 340,
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "next_click_%": 5.0
+      },
+      {
+        "tags": "Boligsocialt",
+        "post_id": "3100",
+        "pub_date": "2025-09-17",
+        "pageviews": 343,
+        "userneeds": "Opdater mig",
+        "categories": "",
+        "next_click_%": 3.7900874
+      },
+      {
+        "tags": "Boligpolitik",
+        "post_id": "3101",
+        "pub_date": "2025-09-17",
+        "pageviews": 299,
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "next_click_%": 2.3411371
+      }
+    ]
+  },
+  "data2": {
+    "goal": {
+      "min_cta": "5",
+      "min_pageviews": "300"
+    },
+    "last_week_articles": [
+      {
+        "tags": "Boligorganisationer",
+        "post_id": "3102",
+        "pub_date": "2025-09-24",
+        "pageviews": 128,
+        "userneeds": "Inspirer mig",
+        "categories": "",
+        "next_click_%": 4.6875
+      },
+      {
+        "tags": "Boligsocialt",
+        "post_id": "3103",
+        "pub_date": "2025-09-24",
+        "pageviews": 667,
+        "userneeds": "Forbind mig",
+        "categories": "",
+        "next_click_%": 4.9475262
+      },
+      {
+        "tags": "Boligsocialt",
+        "post_id": "3104",
+        "pub_date": "2025-09-24",
+        "pageviews": 331,
+        "userneeds": "Forbind mig",
+        "categories": "",
+        "next_click_%": 12.9909365
+      }
+    ],
+    "two_weeks_ago_articles": [
+      {
+        "tags": "Boligorganisationer",
+        "post_id": "3096",
+        "pub_date": "2025-09-10",
+        "pageviews": 1240,
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "next_click_%": 5.3225806
+      },
+      {
+        "tags": "Energi og klima",
+        "post_id": "3097",
+        "pub_date": "2025-09-10",
+        "pageviews": 244,
+        "userneeds": "Inspirer mig",
+        "categories": "",
+        "next_click_%": 3.6885245
+      },
+      {
+        "tags": "Boligorganisationer",
+        "post_id": "3098",
+        "pub_date": "2025-09-10",
+        "pageviews": 485,
+        "userneeds": "Opdater mig",
+        "categories": "",
+        "next_click_%": 3.298969
+      },
+      {
+        "tags": "Beboerdemokrati",
+        "post_id": "3099",
+        "pub_date": "2025-09-17",
+        "pageviews": 340,
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "next_click_%": 5.0
+      },
+      {
+        "tags": "Boligsocialt",
+        "post_id": "3100",
+        "pub_date": "2025-09-17",
+        "pageviews": 343,
+        "userneeds": "Opdater mig",
+        "categories": "",
+        "next_click_%": 3.7900874
+      },
+      {
+        "tags": "Boligpolitik",
+        "post_id": "3101",
+        "pub_date": "2025-09-17",
+        "pageviews": 299,
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "next_click_%": 2.3411371
+      }
+    ]
+  }
+}

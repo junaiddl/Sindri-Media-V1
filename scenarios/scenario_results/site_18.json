@@ -1,0 +1,998 @@
+{
+  "site": 18,
+  "uge": "uge39",
+  "prev_uge": "uge38",
+  "scenario1": "1",
+  "scenario2": "7",
+  "data1": {
+    "table1": {
+      "data": {
+        "besog": {
+          "total": 97845,
+          "afvigelse_ift_maal": "-22.3%",
+          "udvikling_ift_forrige_uge": "-31.9%"
+        },
+        "sidevisninger": {
+          "total": 126669,
+          "afvigelse_ift_maal": "-27.6%",
+          "udvikling_ift_forrige_uge": "-30.5%"
+        },
+        "Next Click (%)": {
+          "total": 0,
+          "afvigelse_ift_maal": "0.00.0%",
+          "udvikling_ift_forrige_uge": "-0.0%"
+        }
+      }
+    },
+    "table2": {
+      "data": [
+        {
+          "kanal": "Others",
+          "besog_uge": 4521,
+          "andel_af_total": "4.6%",
+          "udvikling_ift_forrige_uge": "-25.4%"
+        },
+        {
+          "kanal": "Search",
+          "besog_uge": 34869,
+          "andel_af_total": "35.6%",
+          "udvikling_ift_forrige_uge": "-33.3%"
+        },
+        {
+          "kanal": "Newsletter",
+          "besog_uge": 14027,
+          "andel_af_total": "14.3%",
+          "udvikling_ift_forrige_uge": "-7.6%"
+        },
+        {
+          "kanal": "Facebook",
+          "besog_uge": 36146,
+          "andel_af_total": "36.9%",
+          "udvikling_ift_forrige_uge": "-41.5%"
+        },
+        {
+          "kanal": "Direct",
+          "besog_uge": 8298,
+          "andel_af_total": "8.5%",
+          "udvikling_ift_forrige_uge": "-1.5%"
+        }
+      ]
+    },
+    "table3": {
+      "antal_artikler": 15,
+      "gns_next_click_%": 0,
+      "gns_sidevisninger": 45424.4
+    },
+    "table4": {
+      "over_et_maal": 20,
+      "over_begge_maal": 80,
+      "under_begge_maal": 0
+    },
+    "table5": [
+      {
+        "andel": 33.3,
+        "brugerbehov": "Giv mig en fordel",
+        "gns_next_click_%": 0,
+        "gns_sidevisninger": 95723.6
+      },
+      {
+        "andel": 13.3,
+        "brugerbehov": "Hjælp mig med at forstå",
+        "gns_next_click_%": 0,
+        "gns_sidevisninger": 5060
+      },
+      {
+        "andel": 26.7,
+        "brugerbehov": "Inspirer mig",
+        "gns_next_click_%": 0,
+        "gns_sidevisninger": 34437.8
+      },
+      {
+        "andel": 20,
+        "brugerbehov": "Opdater mig",
+        "gns_next_click_%": 0,
+        "gns_sidevisninger": 17916
+      },
+      {
+        "andel": 6.7,
+        "brugerbehov": "Underhold mig",
+        "gns_next_click_%": 0,
+        "gns_sidevisninger": 1129
+      }
+    ]
+  },
+  "data2": {
+    "top_forside": [
+      {
+        "tags": "biltest, første test, hybrid&brint biler",
+        "post_id": "6312",
+        "pub_date": "2025-09-24",
+        "userneeds": "Opdater mig",
+        "categories": "Toyota",
+        "front_page_clicks": 660
+      },
+      {
+        "tags": "Elbil nyheder, familiebiler",
+        "post_id": "63044",
+        "pub_date": "2025-09-24",
+        "userneeds": "Inspirer mig",
+        "categories": "Ford",
+        "front_page_clicks": 632
+      },
+      {
+        "tags": "Elbil nyheder, første test, biltest",
+        "post_id": "64528",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Kia",
+        "front_page_clicks": 609
+      },
+      {
+        "tags": "Elbil nyheder",
+        "post_id": "68190",
+        "pub_date": "2025-09-26",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Redaktørens dagbog",
+        "front_page_clicks": 480
+      },
+      {
+        "tags": "Elbil nyheder, biltest",
+        "post_id": "299",
+        "pub_date": "2025-09-24",
+        "userneeds": "Inspirer mig",
+        "categories": "Volvo",
+        "front_page_clicks": 469
+      },
+      {
+        "tags": "Elbil nyheder",
+        "post_id": "68199",
+        "pub_date": "2025-09-26",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Redaktørens dagbog",
+        "front_page_clicks": 460
+      },
+      {
+        "tags": "biltest, suv, familiebiler, hybrid&brint biler",
+        "post_id": "1855",
+        "pub_date": "2025-09-22",
+        "userneeds": "Inspirer mig",
+        "categories": "Dacia",
+        "front_page_clicks": 439
+      },
+      {
+        "tags": "Dæk og fælge, økonomi, politi, Sikkerhed",
+        "post_id": "68116",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Dæk",
+        "front_page_clicks": 438
+      },
+      {
+        "tags": "Elbil nyheder, suv, årets bil",
+        "post_id": "315",
+        "pub_date": "2025-09-23",
+        "userneeds": "Inspirer mig",
+        "categories": "Kia",
+        "front_page_clicks": 392
+      },
+      {
+        "tags": "biltest, første test, BM TV, Elbil nyheder",
+        "post_id": "68207",
+        "pub_date": "2025-09-26",
+        "userneeds": "Underhold mig",
+        "categories": "Video",
+        "front_page_clicks": 383
+      }
+    ],
+    "visit_summary": [
+      {
+        "kanal": "Newsletter",
+        "besog_uge": 14027,
+        "andel_af_total": "14.3%",
+        "udvikling_ift_forrige_uge": "-7.6%"
+      },
+      {
+        "kanal": "Direct",
+        "besog_uge": 8298,
+        "andel_af_total": "8.5%",
+        "udvikling_ift_forrige_uge": "-1.5%"
+      }
+    ],
+    "top_newsletter": [
+      {
+        "tags": "",
+        "post_id": "68060",
+        "pub_date": "2025-09-19",
+        "userneeds": "",
+        "categories": "Bil Nyheder",
+        "newsletter_visits": 2346
+      },
+      {
+        "tags": "Dæk og fælge, økonomi, politi, Sikkerhed",
+        "post_id": "68116",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Dæk",
+        "newsletter_visits": 1871
+      },
+      {
+        "tags": "Sikkerhed",
+        "post_id": "68031",
+        "pub_date": "2025-09-19",
+        "userneeds": "",
+        "categories": "MG",
+        "newsletter_visits": 1430
+      },
+      {
+        "tags": "Elbil nyheder, biltest",
+        "post_id": "299",
+        "pub_date": "2025-09-24",
+        "userneeds": "Inspirer mig",
+        "categories": "Volvo",
+        "newsletter_visits": 1112
+      },
+      {
+        "tags": "Elbil nyheder, suv",
+        "post_id": "67950",
+        "pub_date": "2025-09-11",
+        "userneeds": "Giv mig en fordel",
+        "categories": "BYD",
+        "newsletter_visits": 999
+      },
+      {
+        "tags": "Elbil nyheder, første test, biltest",
+        "post_id": "64528",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Kia",
+        "newsletter_visits": 875
+      },
+      {
+        "tags": "suv, Elbil nyheder, biltest",
+        "post_id": "1032",
+        "pub_date": "2025-09-17",
+        "userneeds": "Inspirer mig",
+        "categories": "Skoda",
+        "newsletter_visits": 799
+      },
+      {
+        "tags": "biltest, første test, hybrid&brint biler",
+        "post_id": "6312",
+        "pub_date": "2025-09-24",
+        "userneeds": "Opdater mig",
+        "categories": "Toyota",
+        "newsletter_visits": 680
+      },
+      {
+        "tags": "Elbil nyheder, suv",
+        "post_id": "2252",
+        "pub_date": "2025-09-07",
+        "userneeds": "Opdater mig",
+        "categories": "Skoda",
+        "newsletter_visits": 661
+      },
+      {
+        "tags": "biltest, suv, familiebiler, hybrid&brint biler",
+        "post_id": "1855",
+        "pub_date": "2025-09-22",
+        "userneeds": "Inspirer mig",
+        "categories": "Dacia",
+        "newsletter_visits": 607
+      }
+    ],
+    "last_week_articles": [
+      {
+        "tags": "Elbil nyheder, biltest",
+        "post_id": "299",
+        "pub_date": "2025-09-24",
+        "userneeds": "Inspirer mig",
+        "categories": "Volvo",
+        "unique_pageviews": 2
+      },
+      {
+        "tags": "Elbil nyheder, biltest",
+        "post_id": "299",
+        "pub_date": "2025-09-24",
+        "userneeds": "Inspirer mig",
+        "categories": "Volvo",
+        "unique_pageviews": 7
+      },
+      {
+        "tags": "Elbil nyheder, biltest",
+        "post_id": "299",
+        "pub_date": "2025-09-24",
+        "userneeds": "Inspirer mig",
+        "categories": "Volvo",
+        "unique_pageviews": 157
+      },
+      {
+        "tags": "Elbil nyheder, biltest",
+        "post_id": "299",
+        "pub_date": "2025-09-24",
+        "userneeds": "Inspirer mig",
+        "categories": "Volvo",
+        "unique_pageviews": 4319
+      },
+      {
+        "tags": "Elbil nyheder, biltest",
+        "post_id": "299",
+        "pub_date": "2025-09-24",
+        "userneeds": "Inspirer mig",
+        "categories": "Volvo",
+        "unique_pageviews": 1428
+      },
+      {
+        "tags": "Elbil nyheder, biltest",
+        "post_id": "299",
+        "pub_date": "2025-09-24",
+        "userneeds": "Inspirer mig",
+        "categories": "Volvo",
+        "unique_pageviews": 881
+      },
+      {
+        "tags": "Elbil nyheder, biltest",
+        "post_id": "299",
+        "pub_date": "2025-09-24",
+        "userneeds": "Inspirer mig",
+        "categories": "Volvo",
+        "unique_pageviews": 243
+      },
+      {
+        "tags": "Elbil nyheder, suv, årets bil",
+        "post_id": "315",
+        "pub_date": "2025-09-23",
+        "userneeds": "Inspirer mig",
+        "categories": "Kia",
+        "unique_pageviews": 12
+      },
+      {
+        "tags": "Elbil nyheder, suv, årets bil",
+        "post_id": "315",
+        "pub_date": "2025-09-23",
+        "userneeds": "Inspirer mig",
+        "categories": "Kia",
+        "unique_pageviews": 210
+      },
+      {
+        "tags": "Elbil nyheder, suv, årets bil",
+        "post_id": "315",
+        "pub_date": "2025-09-23",
+        "userneeds": "Inspirer mig",
+        "categories": "Kia",
+        "unique_pageviews": 329
+      },
+      {
+        "tags": "Elbil nyheder, suv, årets bil",
+        "post_id": "315",
+        "pub_date": "2025-09-23",
+        "userneeds": "Inspirer mig",
+        "categories": "Kia",
+        "unique_pageviews": 87
+      },
+      {
+        "tags": "Elbil nyheder, suv, årets bil",
+        "post_id": "315",
+        "pub_date": "2025-09-23",
+        "userneeds": "Inspirer mig",
+        "categories": "Kia",
+        "unique_pageviews": 73
+      },
+      {
+        "tags": "Elbil nyheder, suv, årets bil",
+        "post_id": "315",
+        "pub_date": "2025-09-23",
+        "userneeds": "Inspirer mig",
+        "categories": "Kia",
+        "unique_pageviews": 68
+      },
+      {
+        "tags": "Elbil nyheder, suv, årets bil",
+        "post_id": "315",
+        "pub_date": "2025-09-23",
+        "userneeds": "Inspirer mig",
+        "categories": "Kia",
+        "unique_pageviews": 44
+      },
+      {
+        "tags": "familiebiler, biltest, suv, Elbil nyheder",
+        "post_id": "1373",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guides",
+        "unique_pageviews": 234
+      },
+      {
+        "tags": "familiebiler, biltest, suv, Elbil nyheder",
+        "post_id": "1373",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guides",
+        "unique_pageviews": 184
+      },
+      {
+        "tags": "familiebiler, biltest, suv, Elbil nyheder",
+        "post_id": "1373",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guides",
+        "unique_pageviews": 288
+      },
+      {
+        "tags": "familiebiler, biltest, suv, Elbil nyheder",
+        "post_id": "1373",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guides",
+        "unique_pageviews": 296
+      },
+      {
+        "tags": "familiebiler, biltest, suv, Elbil nyheder",
+        "post_id": "1373",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guides",
+        "unique_pageviews": 236
+      },
+      {
+        "tags": "familiebiler, biltest, suv, Elbil nyheder",
+        "post_id": "1373",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guides",
+        "unique_pageviews": 315
+      },
+      {
+        "tags": "familiebiler, biltest, suv, Elbil nyheder",
+        "post_id": "1373",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guides",
+        "unique_pageviews": 390
+      },
+      {
+        "tags": "biltest, suv, familiebiler, hybrid&brint biler",
+        "post_id": "1855",
+        "pub_date": "2025-09-22",
+        "userneeds": "Inspirer mig",
+        "categories": "Dacia",
+        "unique_pageviews": 192
+      },
+      {
+        "tags": "biltest, suv, familiebiler, hybrid&brint biler",
+        "post_id": "1855",
+        "pub_date": "2025-09-22",
+        "userneeds": "Inspirer mig",
+        "categories": "Dacia",
+        "unique_pageviews": 984
+      },
+      {
+        "tags": "biltest, suv, familiebiler, hybrid&brint biler",
+        "post_id": "1855",
+        "pub_date": "2025-09-22",
+        "userneeds": "Inspirer mig",
+        "categories": "Dacia",
+        "unique_pageviews": 491
+      },
+      {
+        "tags": "biltest, suv, familiebiler, hybrid&brint biler",
+        "post_id": "1855",
+        "pub_date": "2025-09-22",
+        "userneeds": "Inspirer mig",
+        "categories": "Dacia",
+        "unique_pageviews": 71
+      },
+      {
+        "tags": "biltest, suv, familiebiler, hybrid&brint biler",
+        "post_id": "1855",
+        "pub_date": "2025-09-22",
+        "userneeds": "Inspirer mig",
+        "categories": "Dacia",
+        "unique_pageviews": 84
+      },
+      {
+        "tags": "biltest, suv, familiebiler, hybrid&brint biler",
+        "post_id": "1855",
+        "pub_date": "2025-09-22",
+        "userneeds": "Inspirer mig",
+        "categories": "Dacia",
+        "unique_pageviews": 22
+      },
+      {
+        "tags": "biltest, suv, familiebiler, hybrid&brint biler",
+        "post_id": "1855",
+        "pub_date": "2025-09-22",
+        "userneeds": "Inspirer mig",
+        "categories": "Dacia",
+        "unique_pageviews": 13
+      },
+      {
+        "tags": "familiebiler, økonomi, Elbil nyheder, bilsalg",
+        "post_id": "2127",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guides",
+        "unique_pageviews": 103
+      },
+      {
+        "tags": "familiebiler, økonomi, Elbil nyheder, bilsalg",
+        "post_id": "2127",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guides",
+        "unique_pageviews": 85
+      },
+      {
+        "tags": "familiebiler, økonomi, Elbil nyheder, bilsalg",
+        "post_id": "2127",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guides",
+        "unique_pageviews": 183
+      },
+      {
+        "tags": "familiebiler, økonomi, Elbil nyheder, bilsalg",
+        "post_id": "2127",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guides",
+        "unique_pageviews": 191
+      },
+      {
+        "tags": "familiebiler, økonomi, Elbil nyheder, bilsalg",
+        "post_id": "2127",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guides",
+        "unique_pageviews": 175
+      },
+      {
+        "tags": "familiebiler, økonomi, Elbil nyheder, bilsalg",
+        "post_id": "2127",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guides",
+        "unique_pageviews": 230
+      },
+      {
+        "tags": "familiebiler, økonomi, Elbil nyheder, bilsalg",
+        "post_id": "2127",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guides",
+        "unique_pageviews": 230
+      },
+      {
+        "tags": "Elbil nyheder",
+        "post_id": "5664",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Dacia",
+        "unique_pageviews": 76
+      },
+      {
+        "tags": "Elbil nyheder",
+        "post_id": "5664",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Dacia",
+        "unique_pageviews": 1735
+      },
+      {
+        "tags": "Elbil nyheder",
+        "post_id": "5664",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Dacia",
+        "unique_pageviews": 1077
+      },
+      {
+        "tags": "Elbil nyheder",
+        "post_id": "5664",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Dacia",
+        "unique_pageviews": 392
+      },
+      {
+        "tags": "Elbil nyheder",
+        "post_id": "5664",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Dacia",
+        "unique_pageviews": 220
+      },
+      {
+        "tags": "Elbil nyheder",
+        "post_id": "5664",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Dacia",
+        "unique_pageviews": 29
+      },
+      {
+        "tags": "biltest, første test, hybrid&brint biler",
+        "post_id": "6312",
+        "pub_date": "2025-09-24",
+        "userneeds": "Opdater mig",
+        "categories": "Toyota",
+        "unique_pageviews": 3
+      },
+      {
+        "tags": "biltest, første test, hybrid&brint biler",
+        "post_id": "6312",
+        "pub_date": "2025-09-24",
+        "userneeds": "Opdater mig",
+        "categories": "Toyota",
+        "unique_pageviews": 15
+      },
+      {
+        "tags": "biltest, første test, hybrid&brint biler",
+        "post_id": "6312",
+        "pub_date": "2025-09-24",
+        "userneeds": "Opdater mig",
+        "categories": "Toyota",
+        "unique_pageviews": 135
+      },
+      {
+        "tags": "biltest, første test, hybrid&brint biler",
+        "post_id": "6312",
+        "pub_date": "2025-09-24",
+        "userneeds": "Opdater mig",
+        "categories": "Toyota",
+        "unique_pageviews": 371
+      },
+      {
+        "tags": "biltest, første test, hybrid&brint biler",
+        "post_id": "6312",
+        "pub_date": "2025-09-24",
+        "userneeds": "Opdater mig",
+        "categories": "Toyota",
+        "unique_pageviews": 1428
+      },
+      {
+        "tags": "biltest, første test, hybrid&brint biler",
+        "post_id": "6312",
+        "pub_date": "2025-09-24",
+        "userneeds": "Opdater mig",
+        "categories": "Toyota",
+        "unique_pageviews": 2422
+      },
+      {
+        "tags": "biltest, første test, hybrid&brint biler",
+        "post_id": "6312",
+        "pub_date": "2025-09-24",
+        "userneeds": "Opdater mig",
+        "categories": "Toyota",
+        "unique_pageviews": 1204
+      },
+      {
+        "tags": "Elbil nyheder, familiebiler",
+        "post_id": "63044",
+        "pub_date": "2025-09-24",
+        "userneeds": "Inspirer mig",
+        "categories": "Ford",
+        "unique_pageviews": 36
+      },
+      {
+        "tags": "Elbil nyheder, familiebiler",
+        "post_id": "63044",
+        "pub_date": "2025-09-24",
+        "userneeds": "Inspirer mig",
+        "categories": "Ford",
+        "unique_pageviews": 20
+      },
+      {
+        "tags": "Elbil nyheder, familiebiler",
+        "post_id": "63044",
+        "pub_date": "2025-09-24",
+        "userneeds": "Inspirer mig",
+        "categories": "Ford",
+        "unique_pageviews": 192
+      },
+      {
+        "tags": "Elbil nyheder, familiebiler",
+        "post_id": "63044",
+        "pub_date": "2025-09-24",
+        "userneeds": "Inspirer mig",
+        "categories": "Ford",
+        "unique_pageviews": 1627
+      },
+      {
+        "tags": "Elbil nyheder, familiebiler",
+        "post_id": "63044",
+        "pub_date": "2025-09-24",
+        "userneeds": "Inspirer mig",
+        "categories": "Ford",
+        "unique_pageviews": 851
+      },
+      {
+        "tags": "Elbil nyheder, familiebiler",
+        "post_id": "63044",
+        "pub_date": "2025-09-24",
+        "userneeds": "Inspirer mig",
+        "categories": "Ford",
+        "unique_pageviews": 570
+      },
+      {
+        "tags": "Elbil nyheder, familiebiler",
+        "post_id": "63044",
+        "pub_date": "2025-09-24",
+        "userneeds": "Inspirer mig",
+        "categories": "Ford",
+        "unique_pageviews": 560
+      },
+      {
+        "tags": "Elbil nyheder, første test, biltest",
+        "post_id": "64528",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Kia",
+        "unique_pageviews": 1927
+      },
+      {
+        "tags": "Elbil nyheder, første test, biltest",
+        "post_id": "64528",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Kia",
+        "unique_pageviews": 2448
+      },
+      {
+        "tags": "Elbil nyheder, første test, biltest",
+        "post_id": "64528",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Kia",
+        "unique_pageviews": 807
+      },
+      {
+        "tags": "Elbil nyheder, første test, biltest",
+        "post_id": "64528",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Kia",
+        "unique_pageviews": 301
+      },
+      {
+        "tags": "Elbil nyheder, første test, biltest",
+        "post_id": "64528",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Kia",
+        "unique_pageviews": 85
+      },
+      {
+        "tags": "Elbil nyheder, første test, biltest",
+        "post_id": "64528",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Kia",
+        "unique_pageviews": 52
+      },
+      {
+        "tags": "Elbil nyheder, første test, biltest",
+        "post_id": "64528",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Kia",
+        "unique_pageviews": 36
+      },
+      {
+        "tags": "Elbil nyheder, første test",
+        "post_id": "65354",
+        "pub_date": "2025-09-27",
+        "userneeds": "Opdater mig",
+        "categories": "Nissan",
+        "unique_pageviews": 16
+      },
+      {
+        "tags": "Elbil nyheder, første test",
+        "post_id": "65354",
+        "pub_date": "2025-09-27",
+        "userneeds": "Opdater mig",
+        "categories": "Nissan",
+        "unique_pageviews": 15
+      },
+      {
+        "tags": "Elbil nyheder, første test",
+        "post_id": "65354",
+        "pub_date": "2025-09-27",
+        "userneeds": "Opdater mig",
+        "categories": "Nissan",
+        "unique_pageviews": 12
+      },
+      {
+        "tags": "Elbil nyheder, første test",
+        "post_id": "65354",
+        "pub_date": "2025-09-27",
+        "userneeds": "Opdater mig",
+        "categories": "Nissan",
+        "unique_pageviews": 13
+      },
+      {
+        "tags": "Elbil nyheder, første test",
+        "post_id": "65354",
+        "pub_date": "2025-09-27",
+        "userneeds": "Opdater mig",
+        "categories": "Nissan",
+        "unique_pageviews": 17
+      },
+      {
+        "tags": "Elbil nyheder, første test",
+        "post_id": "65354",
+        "pub_date": "2025-09-27",
+        "userneeds": "Opdater mig",
+        "categories": "Nissan",
+        "unique_pageviews": 220
+      },
+      {
+        "tags": "Elbil nyheder, første test",
+        "post_id": "65354",
+        "pub_date": "2025-09-27",
+        "userneeds": "Opdater mig",
+        "categories": "Nissan",
+        "unique_pageviews": 309
+      },
+      {
+        "tags": "Dæk og fælge, økonomi, politi, Sikkerhed",
+        "post_id": "68116",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Dæk",
+        "unique_pageviews": 808
+      },
+      {
+        "tags": "Dæk og fælge, økonomi, politi, Sikkerhed",
+        "post_id": "68116",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Dæk",
+        "unique_pageviews": 857
+      },
+      {
+        "tags": "Dæk og fælge, økonomi, politi, Sikkerhed",
+        "post_id": "68116",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Dæk",
+        "unique_pageviews": 374
+      },
+      {
+        "tags": "Dæk og fælge, økonomi, politi, Sikkerhed",
+        "post_id": "68116",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Dæk",
+        "unique_pageviews": 464
+      },
+      {
+        "tags": "Dæk og fælge, økonomi, politi, Sikkerhed",
+        "post_id": "68116",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Dæk",
+        "unique_pageviews": 260
+      },
+      {
+        "tags": "Dæk og fælge, økonomi, politi, Sikkerhed",
+        "post_id": "68116",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Dæk",
+        "unique_pageviews": 222
+      },
+      {
+        "tags": "varebil, biltest, turbo, RAM",
+        "post_id": "68139",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Andre bilmærker",
+        "unique_pageviews": 77
+      },
+      {
+        "tags": "varebil, biltest, turbo, RAM",
+        "post_id": "68139",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Andre bilmærker",
+        "unique_pageviews": 541
+      },
+      {
+        "tags": "varebil, biltest, turbo, RAM",
+        "post_id": "68139",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Andre bilmærker",
+        "unique_pageviews": 1144
+      },
+      {
+        "tags": "varebil, biltest, turbo, RAM",
+        "post_id": "68139",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Andre bilmærker",
+        "unique_pageviews": 289
+      },
+      {
+        "tags": "varebil, biltest, turbo, RAM",
+        "post_id": "68139",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Andre bilmærker",
+        "unique_pageviews": 304
+      },
+      {
+        "tags": "Elbil nyheder",
+        "post_id": "68190",
+        "pub_date": "2025-09-26",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Redaktørens dagbog",
+        "unique_pageviews": 424
+      },
+      {
+        "tags": "Elbil nyheder",
+        "post_id": "68190",
+        "pub_date": "2025-09-26",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Redaktørens dagbog",
+        "unique_pageviews": 1678
+      },
+      {
+        "tags": "Elbil nyheder",
+        "post_id": "68190",
+        "pub_date": "2025-09-26",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Redaktørens dagbog",
+        "unique_pageviews": 1887
+      },
+      {
+        "tags": "Elbil nyheder",
+        "post_id": "68199",
+        "pub_date": "2025-09-26",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Redaktørens dagbog",
+        "unique_pageviews": 81
+      },
+      {
+        "tags": "Elbil nyheder",
+        "post_id": "68199",
+        "pub_date": "2025-09-26",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Redaktørens dagbog",
+        "unique_pageviews": 1823
+      },
+      {
+        "tags": "Elbil nyheder",
+        "post_id": "68199",
+        "pub_date": "2025-09-26",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Redaktørens dagbog",
+        "unique_pageviews": 1281
+      },
+      {
+        "tags": "biltest, første test, BM TV, Elbil nyheder",
+        "post_id": "68207",
+        "pub_date": "2025-09-26",
+        "userneeds": "Underhold mig",
+        "categories": "Video",
+        "unique_pageviews": 90
+      },
+      {
+        "tags": "biltest, første test, BM TV, Elbil nyheder",
+        "post_id": "68207",
+        "pub_date": "2025-09-26",
+        "userneeds": "Underhold mig",
+        "categories": "Video",
+        "unique_pageviews": 336
+      },
+      {
+        "tags": "biltest, første test, BM TV, Elbil nyheder",
+        "post_id": "68207",
+        "pub_date": "2025-09-26",
+        "userneeds": "Underhold mig",
+        "categories": "Video",
+        "unique_pageviews": 208
+      }
+    ]
+  }
+}

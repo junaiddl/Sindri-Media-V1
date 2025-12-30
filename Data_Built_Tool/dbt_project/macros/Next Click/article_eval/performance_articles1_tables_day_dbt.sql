@@ -1,0 +1,176 @@
+ {% macro next_click_performance_articles1_tables_day_dbt() %}   
+    
+    {% set site = var('site') %}
+    {% set event = var('event_action') %}
+    {% set json = var('click_val') %}
+    {% set status = var('condition')['status'] %}
+    {% set query = var('condition')['query'] %}
+    {% set col_status = var('columns_to_add')['status'] %}
+    {% set col_name  = var('columns_to_add')['columns_name'] %}
+    {% set col_condition = var('columns_to_add')['condition'] %}
+    {% set table_modification = var('table_modification').table_modification_tendency %}
+
+
+    CREATE PROCEDURE `performance_articles1_tables_day_dbt_{{site}}`()
+    BEGIN
+    WITH last_7days_post AS (
+        SELECT siteid as siteid,ID,Title, 
+        {{ table_modification['userneeds'] }} AS Categories, 
+        {{ table_modification['tags'] }} AS tags,
+        {{ table_modification['Categories'] }} AS sektion,
+        Date as Date,link as url, DATE(Modified) as  updated
+        {% if col_status %}
+          ,{{col_condition}} {{col_name}}
+        {% endif %}
+        FROM prod.site_archive_post
+        where date  between DATE_SUB(NOW(), INTERVAL 8 DAY) and DATE_SUB(NOW(), INTERVAL  1 DAY)   
+        {% if status %}
+          {{query}}
+        {% endif %}
+        and siteid = {{site}} 
+    ),
+    last_7days_hits as(
+      select 
+        coalesce(e.siteid,{{site}}) as siteid,
+            coalesce(e.PostID,ldp.Id) as postid,
+            ldp.Categories,
+            ldp.Title,
+            ldp.date as publish_date,
+            ldp.url, 
+            ldp.updated,
+            ldp.Tags,
+            ldp.sektion,
+            coalesce(sum(hits),0) as hits
+              {% if col_status %}
+                ,ldp.{{col_name}}
+            {% endif %}
+      from  last_7days_post ldp
+      left join prod.events e
+      on e.postid=ldp.id   and e.siteid = ldp.siteid
+      AND e.date between DATE_SUB(NOW(), INTERVAL 8 DAY) and DATE_SUB(NOW(), INTERVAL  1 DAY)  and e.siteid = {{site}}
+      and e.Event_Action= '{{event}}'
+      group by 1,2,3,4,5,6,7,8,9
+          {% if col_status %}
+                ,ldp.{{col_name}}
+            {% endif %}
+    ) ,
+    last_7days_pageview as(
+      select 
+        coalesce(e.siteid,{{site}}) as siteid,
+            coalesce(e.PostID,ldp.Id) as postid,
+            ldp.Categories,
+            ldp.Title,
+            ldp.date as publish_date,
+            ldp.url,
+            ldp.updated,
+            ldp.Tags,
+            ldp.sektion,
+            COALESCE(sum(unique_pageviews),0) as pageviews 
+              {% if col_status %}
+                ,ldp.{{col_name}}
+            {% endif %}
+      from  last_7days_post ldp
+      join prod.pages e
+      on e.postid=ldp.id   and e.siteid = ldp.siteid
+      and e.date between DATE_SUB(NOW(), INTERVAL 8 DAY) and DATE_SUB(NOW(), INTERVAL  1 DAY) and e.siteid = {{site}}
+      group by 1,2,3,4,5,6,7,8,9
+          {% if col_status %}
+                ,ldp.{{col_name}}
+            {% endif %}
+    ),
+
+    last_7days_hits_pages as(
+    select l.siteid as siteid,l.postid,l.publish_date,l.hits,p.pageviews,l.Categories,l.Title, l.url, l.updated, l.Tags,l.sektion
+      {% if col_status %}
+                ,l.{{col_name}}
+            {% endif %}
+    from last_7days_hits l
+    left join last_7days_pageview p on l.postid=p.postId   and l.siteid = p.siteid
+    where l.siteid = {{site}}
+    union 
+    select p.siteid as siteid,p.postid,p.publish_date,l.hits,p.pageviews,p.Categories,p.Title ,p.url, p.updated, p.Tags,p.sektion 
+      {% if col_status %}
+                ,p.{{col_name}}
+            {% endif %}
+    from last_7days_hits l
+    right join last_7days_pageview p on l.postid=p.postId   and l.siteid = p.siteid
+    where p.siteid = {{site}}
+    ),
+
+    last_7days_hits_pages_goal AS (
+        SELECT 
+            l.siteid AS siteid,
+            l.postid,
+            l.publish_date,
+            l.hits,
+            l.pageviews,
+            SUM(l.hits) AS s_hits,
+            SUM(l.pageviews) AS s_pageviews,
+            l.Categories,
+            l.Title,
+            l.url,
+            l.updated,
+            l.Tags,
+            g.min_pageviews,
+            g.Min_CTA,
+            l.sektion,
+    case 
+          when 
+            (coalesce((coalesce(l.hits,0)/coalesce(l.pageviews,1)*100),0)>=coalesce(g.Min_CTA,0) 
+              or coalesce(l.pageviews,0)>=coalesce(g.Min_pageviews,0) 
+            )
+          and 
+                !(coalesce((coalesce(l.hits,0)/coalesce(l.pageviews,1)*100),0)>=coalesce(g.Min_CTA,0) 
+            and coalesce(l.pageviews,0)>=coalesce(g.Min_pageviews,0) 
+          ) 
+          then 1 else 0 end as gt_goal     
+          {% if col_status %}
+                ,l.{{col_name}}
+            {% endif %}
+      
+        FROM last_7days_hits_pages l
+        JOIN prod.goals g ON g.date = l.publish_date AND g.site_id = l.siteid
+        WHERE g.site_id = {{site}}
+        GROUP BY 
+            l.siteid,
+            l.postid,
+            l.publish_date,
+            l.hits,
+            l.pageviews,
+            l.Categories,
+            l.Title,
+            l.url,
+            l.updated,
+            l.Tags,
+            g.min_pageviews,
+            g.Min_CTA,
+            l.sektion
+              {% if col_status %}
+                ,l.{{col_name}}
+            {% endif %}
+    )
+
+    select 
+    CONCAT('{"site":', siteid,',"data":{','"columns":{{json}},','"rows":',JSON_ARRAYAGG(
+              JSON_OBJECT(
+                  'id', postid,
+                  'article', Title,
+                    'category', coalesce(Categories, ''),
+                        'sektion',coalesce(sektion , ''),
+                        'tags', coalesce(tags, ''),
+                    {% if col_status %}
+                      '{{col_name}}', {{col_name}},
+                  {% endif %}
+                  'date', publish_date,
+                  'updated', updated,
+                  'url', url,
+                  'brugerbehov', coalesce(pageviews,0),
+            'clicks',coalesce(ROUND(coalesce(lg.s_hits, 0) / coalesce(lg.s_pageviews, 0), 3)*100 ,0) 
+              ))
+          ,'}}') AS json_data
+
+    from last_7days_hits_pages_goal lg where gt_goal=1 and siteid = {{site}};
+
+    END
+
+{% endmacro %}

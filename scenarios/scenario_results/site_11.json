@@ -1,0 +1,1230 @@
+{
+  "site": 11,
+  "uge": "uge39",
+  "prev_uge": "uge38",
+  "scenario1": "1",
+  "scenario2": "7",
+  "data1": {
+    "table1": {
+      "data": {
+        "besog": {
+          "total": 71486,
+          "afvigelse_ift_maal": "-14.9%",
+          "udvikling_ift_forrige_uge": "+15.6%"
+        },
+        "sidevisninger": {
+          "total": 91384,
+          "afvigelse_ift_maal": "-23.2%",
+          "udvikling_ift_forrige_uge": "+13.2%"
+        },
+        "Next Click (%)": {
+          "total": 11.8,
+          "afvigelse_ift_maal": "-2.0%",
+          "udvikling_ift_forrige_uge": "+3.2%"
+        }
+      }
+    },
+    "table2": {
+      "data": [
+        {
+          "kanal": "Search",
+          "besog_uge": 34710,
+          "andel_af_total": "48.6%",
+          "udvikling_ift_forrige_uge": "+22.6%"
+        },
+        {
+          "kanal": "Direct",
+          "besog_uge": 7677,
+          "andel_af_total": "10.7%",
+          "udvikling_ift_forrige_uge": "+7.5%"
+        },
+        {
+          "kanal": "Others",
+          "besog_uge": 7495,
+          "andel_af_total": "10.5%",
+          "udvikling_ift_forrige_uge": "+28.8%"
+        },
+        {
+          "kanal": "Newsletter",
+          "besog_uge": 8805,
+          "andel_af_total": "12.3%",
+          "udvikling_ift_forrige_uge": "-31.8%"
+        },
+        {
+          "kanal": "Facebook",
+          "besog_uge": 12799,
+          "andel_af_total": "17.9%",
+          "udvikling_ift_forrige_uge": "+66.9%"
+        }
+      ]
+    },
+    "table3": {
+      "antal_artikler": 24,
+      "gns_next_click_%": 13.9,
+      "gns_sidevisninger": 1612.0
+    },
+    "table4": {
+      "over_et_maal": 41.7,
+      "over_begge_maal": 50,
+      "under_begge_maal": 8.3
+    },
+    "table5": [
+      {
+        "andel": 12.5,
+        "brugerbehov": "Forbind mig",
+        "gns_next_click_%": 15.6,
+        "gns_sidevisninger": 767.3
+      },
+      {
+        "andel": 20.8,
+        "brugerbehov": "Giv mig en fordel",
+        "gns_next_click_%": 18.7,
+        "gns_sidevisninger": 1082.8
+      },
+      {
+        "andel": 20.8,
+        "brugerbehov": "Hjælp mig med at forstå",
+        "gns_next_click_%": 13.5,
+        "gns_sidevisninger": 2456.6
+      },
+      {
+        "andel": 16.7,
+        "brugerbehov": "Inspirer mig",
+        "gns_next_click_%": 10.9,
+        "gns_sidevisninger": 1374.5
+      },
+      {
+        "andel": 29.2,
+        "brugerbehov": "Opdater mig",
+        "gns_next_click_%": 13.4,
+        "gns_sidevisninger": 1884.6
+      }
+    ]
+  },
+  "data2": {
+    "top_forside": [
+      {
+        "tags": "",
+        "post_id": "188679",
+        "pub_date": "2025-09-23",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "front_page_clicks": 350
+      },
+      {
+        "tags": "",
+        "post_id": "188657",
+        "pub_date": "2025-09-24",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "front_page_clicks": 335
+      },
+      {
+        "tags": "",
+        "post_id": "188748",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "front_page_clicks": 325
+      },
+      {
+        "tags": "It",
+        "post_id": "187692",
+        "pub_date": "2025-09-24",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "front_page_clicks": 177
+      },
+      {
+        "tags": "Dansk",
+        "post_id": "187859",
+        "pub_date": "2025-09-24",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "front_page_clicks": 154
+      },
+      {
+        "tags": "",
+        "post_id": "188884",
+        "pub_date": "2025-09-26",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "front_page_clicks": 153
+      },
+      {
+        "tags": "Studie",
+        "post_id": "188082",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "front_page_clicks": 144
+      },
+      {
+        "tags": "",
+        "post_id": "188526",
+        "pub_date": "2025-09-22",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "front_page_clicks": 138
+      },
+      {
+        "tags": "",
+        "post_id": "188896",
+        "pub_date": "2025-09-26",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "front_page_clicks": 134
+      },
+      {
+        "tags": "",
+        "post_id": "187924",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "front_page_clicks": 121
+      }
+    ],
+    "visit_summary": [
+      {
+        "kanal": "Direct",
+        "besog_uge": 7677,
+        "andel_af_total": "10.7%",
+        "udvikling_ift_forrige_uge": "+7.5%"
+      },
+      {
+        "kanal": "Newsletter",
+        "besog_uge": 8805,
+        "andel_af_total": "12.3%",
+        "udvikling_ift_forrige_uge": "-31.8%"
+      }
+    ],
+    "top_newsletter": [
+      {
+        "tags": "",
+        "post_id": "188748",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "newsletter_visits": 1119
+      },
+      {
+        "tags": "",
+        "post_id": "188884",
+        "pub_date": "2025-09-26",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "newsletter_visits": 666
+      },
+      {
+        "tags": "Dansk",
+        "post_id": "187859",
+        "pub_date": "2025-09-24",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "newsletter_visits": 659
+      },
+      {
+        "tags": "",
+        "post_id": "188657",
+        "pub_date": "2025-09-24",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "newsletter_visits": 522
+      },
+      {
+        "tags": "Studie",
+        "post_id": "188082",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "newsletter_visits": 420
+      },
+      {
+        "tags": "",
+        "post_id": "187924",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "newsletter_visits": 370
+      },
+      {
+        "tags": "",
+        "post_id": "187873",
+        "pub_date": "2025-09-17",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "newsletter_visits": 283
+      },
+      {
+        "tags": "",
+        "post_id": "188679",
+        "pub_date": "2025-09-23",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "newsletter_visits": 237
+      },
+      {
+        "tags": "",
+        "post_id": "187102",
+        "pub_date": "2025-09-12",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "newsletter_visits": 229
+      },
+      {
+        "tags": "",
+        "post_id": "188862",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "newsletter_visits": 228
+      }
+    ],
+    "last_week_articles": [
+      {
+        "tags": "Matematik",
+        "post_id": "186053",
+        "pub_date": "2025-09-25",
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "unique_pageviews": 63
+      },
+      {
+        "tags": "Matematik",
+        "post_id": "186053",
+        "pub_date": "2025-09-25",
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "unique_pageviews": 2071
+      },
+      {
+        "tags": "Matematik",
+        "post_id": "186053",
+        "pub_date": "2025-09-25",
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "unique_pageviews": 1531
+      },
+      {
+        "tags": "Matematik",
+        "post_id": "186053",
+        "pub_date": "2025-09-25",
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "unique_pageviews": 218
+      },
+      {
+        "tags": "",
+        "post_id": "187342",
+        "pub_date": "2025-09-26",
+        "userneeds": "Forbind mig",
+        "categories": "Debat",
+        "unique_pageviews": 417
+      },
+      {
+        "tags": "",
+        "post_id": "187342",
+        "pub_date": "2025-09-26",
+        "userneeds": "Forbind mig",
+        "categories": "Debat",
+        "unique_pageviews": 151
+      },
+      {
+        "tags": "",
+        "post_id": "187342",
+        "pub_date": "2025-09-26",
+        "userneeds": "Forbind mig",
+        "categories": "Debat",
+        "unique_pageviews": 80
+      },
+      {
+        "tags": "Uddannelsesvejledning",
+        "post_id": "187354",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "unique_pageviews": 31
+      },
+      {
+        "tags": "Uddannelsesvejledning",
+        "post_id": "187354",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "unique_pageviews": 84
+      },
+      {
+        "tags": "Uddannelsesvejledning",
+        "post_id": "187354",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "unique_pageviews": 27
+      },
+      {
+        "tags": "Uddannelsesvejledning",
+        "post_id": "187354",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "unique_pageviews": 11
+      },
+      {
+        "tags": "Uddannelsesvejledning",
+        "post_id": "187354",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "unique_pageviews": 3
+      },
+      {
+        "tags": "Uddannelsesvejledning",
+        "post_id": "187354",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "unique_pageviews": 7
+      },
+      {
+        "tags": "It",
+        "post_id": "187692",
+        "pub_date": "2025-09-24",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 160
+      },
+      {
+        "tags": "It",
+        "post_id": "187692",
+        "pub_date": "2025-09-24",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 1473
+      },
+      {
+        "tags": "It",
+        "post_id": "187692",
+        "pub_date": "2025-09-24",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 487
+      },
+      {
+        "tags": "It",
+        "post_id": "187692",
+        "pub_date": "2025-09-24",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 555
+      },
+      {
+        "tags": "It",
+        "post_id": "187692",
+        "pub_date": "2025-09-24",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 443
+      },
+      {
+        "tags": "Dansk",
+        "post_id": "187859",
+        "pub_date": "2025-09-24",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 518
+      },
+      {
+        "tags": "Dansk",
+        "post_id": "187859",
+        "pub_date": "2025-09-24",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 823
+      },
+      {
+        "tags": "Dansk",
+        "post_id": "187859",
+        "pub_date": "2025-09-24",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 333
+      },
+      {
+        "tags": "Dansk",
+        "post_id": "187859",
+        "pub_date": "2025-09-24",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 214
+      },
+      {
+        "tags": "Dansk",
+        "post_id": "187859",
+        "pub_date": "2025-09-24",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 188
+      },
+      {
+        "tags": "",
+        "post_id": "187924",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "unique_pageviews": 198
+      },
+      {
+        "tags": "",
+        "post_id": "187924",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "unique_pageviews": 191
+      },
+      {
+        "tags": "",
+        "post_id": "187924",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "unique_pageviews": 190
+      },
+      {
+        "tags": "",
+        "post_id": "187924",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "unique_pageviews": 94
+      },
+      {
+        "tags": "",
+        "post_id": "187924",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Guide",
+        "unique_pageviews": 76
+      },
+      {
+        "tags": "Studie",
+        "post_id": "188076",
+        "pub_date": "2025-09-23",
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "unique_pageviews": 79
+      },
+      {
+        "tags": "Studie",
+        "post_id": "188076",
+        "pub_date": "2025-09-23",
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "unique_pageviews": 156
+      },
+      {
+        "tags": "Studie",
+        "post_id": "188076",
+        "pub_date": "2025-09-23",
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "unique_pageviews": 92
+      },
+      {
+        "tags": "Studie",
+        "post_id": "188076",
+        "pub_date": "2025-09-23",
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "unique_pageviews": 17
+      },
+      {
+        "tags": "Studie",
+        "post_id": "188076",
+        "pub_date": "2025-09-23",
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "unique_pageviews": 29
+      },
+      {
+        "tags": "Studie",
+        "post_id": "188076",
+        "pub_date": "2025-09-23",
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "unique_pageviews": 12
+      },
+      {
+        "tags": "Studie",
+        "post_id": "188079",
+        "pub_date": "2025-09-23",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 333
+      },
+      {
+        "tags": "Studie",
+        "post_id": "188079",
+        "pub_date": "2025-09-23",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 1407
+      },
+      {
+        "tags": "Studie",
+        "post_id": "188079",
+        "pub_date": "2025-09-23",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 256
+      },
+      {
+        "tags": "Studie",
+        "post_id": "188079",
+        "pub_date": "2025-09-23",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 131
+      },
+      {
+        "tags": "Studie",
+        "post_id": "188079",
+        "pub_date": "2025-09-23",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 74
+      },
+      {
+        "tags": "Studie",
+        "post_id": "188079",
+        "pub_date": "2025-09-23",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 22
+      },
+      {
+        "tags": "Studie",
+        "post_id": "188082",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 718
+      },
+      {
+        "tags": "Studie",
+        "post_id": "188082",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 470
+      },
+      {
+        "tags": "Studie",
+        "post_id": "188082",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 133
+      },
+      {
+        "tags": "Studie",
+        "post_id": "188082",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 74
+      },
+      {
+        "tags": "Studie",
+        "post_id": "188082",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 57
+      },
+      {
+        "tags": "Studie",
+        "post_id": "188082",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 46
+      },
+      {
+        "tags": "Studie",
+        "post_id": "188082",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 27
+      },
+      {
+        "tags": "Specialpædagogik",
+        "post_id": "188234",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 15
+      },
+      {
+        "tags": "Specialpædagogik",
+        "post_id": "188234",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 9
+      },
+      {
+        "tags": "Specialpædagogik",
+        "post_id": "188234",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 6
+      },
+      {
+        "tags": "Specialpædagogik",
+        "post_id": "188234",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 2
+      },
+      {
+        "tags": "Specialpædagogik",
+        "post_id": "188234",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 1
+      },
+      {
+        "tags": "Specialpædagogik",
+        "post_id": "188234",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 1
+      },
+      {
+        "tags": "Specialpædagogik",
+        "post_id": "188234",
+        "pub_date": "2025-09-22",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 1
+      },
+      {
+        "tags": "",
+        "post_id": "188526",
+        "pub_date": "2025-09-22",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 666
+      },
+      {
+        "tags": "",
+        "post_id": "188526",
+        "pub_date": "2025-09-22",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 292
+      },
+      {
+        "tags": "",
+        "post_id": "188526",
+        "pub_date": "2025-09-22",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 140
+      },
+      {
+        "tags": "",
+        "post_id": "188526",
+        "pub_date": "2025-09-22",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 57
+      },
+      {
+        "tags": "",
+        "post_id": "188526",
+        "pub_date": "2025-09-22",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 33
+      },
+      {
+        "tags": "",
+        "post_id": "188526",
+        "pub_date": "2025-09-22",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 13
+      },
+      {
+        "tags": "",
+        "post_id": "188526",
+        "pub_date": "2025-09-22",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 15
+      },
+      {
+        "tags": "Specialpædagogik",
+        "post_id": "188544",
+        "pub_date": "2025-09-25",
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "unique_pageviews": 30
+      },
+      {
+        "tags": "Specialpædagogik",
+        "post_id": "188544",
+        "pub_date": "2025-09-25",
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "unique_pageviews": 69
+      },
+      {
+        "tags": "Specialpædagogik",
+        "post_id": "188544",
+        "pub_date": "2025-09-25",
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "unique_pageviews": 10
+      },
+      {
+        "tags": "Specialpædagogik",
+        "post_id": "188544",
+        "pub_date": "2025-09-25",
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "unique_pageviews": 10
+      },
+      {
+        "tags": "Senior",
+        "post_id": "188577",
+        "pub_date": "2025-09-25",
+        "userneeds": "Inspirer mig",
+        "categories": "Debat",
+        "unique_pageviews": 45
+      },
+      {
+        "tags": "Senior",
+        "post_id": "188577",
+        "pub_date": "2025-09-25",
+        "userneeds": "Inspirer mig",
+        "categories": "Debat",
+        "unique_pageviews": 9
+      },
+      {
+        "tags": "Senior",
+        "post_id": "188577",
+        "pub_date": "2025-09-25",
+        "userneeds": "Inspirer mig",
+        "categories": "Debat",
+        "unique_pageviews": 3
+      },
+      {
+        "tags": "Senior",
+        "post_id": "188577",
+        "pub_date": "2025-09-25",
+        "userneeds": "Inspirer mig",
+        "categories": "Debat",
+        "unique_pageviews": 9
+      },
+      {
+        "tags": "Dansk som andetsprog",
+        "post_id": "188590",
+        "pub_date": "2025-09-22",
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "unique_pageviews": 300
+      },
+      {
+        "tags": "Dansk som andetsprog",
+        "post_id": "188590",
+        "pub_date": "2025-09-22",
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "unique_pageviews": 72
+      },
+      {
+        "tags": "Dansk som andetsprog",
+        "post_id": "188590",
+        "pub_date": "2025-09-22",
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "unique_pageviews": 34
+      },
+      {
+        "tags": "Dansk som andetsprog",
+        "post_id": "188590",
+        "pub_date": "2025-09-22",
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "unique_pageviews": 21
+      },
+      {
+        "tags": "Dansk som andetsprog",
+        "post_id": "188590",
+        "pub_date": "2025-09-22",
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "unique_pageviews": 16
+      },
+      {
+        "tags": "Dansk som andetsprog",
+        "post_id": "188590",
+        "pub_date": "2025-09-22",
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "unique_pageviews": 1
+      },
+      {
+        "tags": "Dansk som andetsprog",
+        "post_id": "188590",
+        "pub_date": "2025-09-22",
+        "userneeds": "Inspirer mig",
+        "categories": "Artikel",
+        "unique_pageviews": 2
+      },
+      {
+        "tags": "",
+        "post_id": "188657",
+        "pub_date": "2025-09-24",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 1455
+      },
+      {
+        "tags": "",
+        "post_id": "188657",
+        "pub_date": "2025-09-24",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 564
+      },
+      {
+        "tags": "",
+        "post_id": "188657",
+        "pub_date": "2025-09-24",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 214
+      },
+      {
+        "tags": "",
+        "post_id": "188657",
+        "pub_date": "2025-09-24",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 195
+      },
+      {
+        "tags": "",
+        "post_id": "188657",
+        "pub_date": "2025-09-24",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 200
+      },
+      {
+        "tags": "",
+        "post_id": "188679",
+        "pub_date": "2025-09-23",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 2119
+      },
+      {
+        "tags": "",
+        "post_id": "188679",
+        "pub_date": "2025-09-23",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 2303
+      },
+      {
+        "tags": "",
+        "post_id": "188679",
+        "pub_date": "2025-09-23",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 893
+      },
+      {
+        "tags": "",
+        "post_id": "188679",
+        "pub_date": "2025-09-23",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 440
+      },
+      {
+        "tags": "",
+        "post_id": "188679",
+        "pub_date": "2025-09-23",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 530
+      },
+      {
+        "tags": "",
+        "post_id": "188679",
+        "pub_date": "2025-09-23",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 421
+      },
+      {
+        "tags": "",
+        "post_id": "188694",
+        "pub_date": "2025-09-25",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 135
+      },
+      {
+        "tags": "",
+        "post_id": "188694",
+        "pub_date": "2025-09-25",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 49
+      },
+      {
+        "tags": "",
+        "post_id": "188694",
+        "pub_date": "2025-09-25",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 28
+      },
+      {
+        "tags": "",
+        "post_id": "188694",
+        "pub_date": "2025-09-25",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 21
+      },
+      {
+        "tags": "",
+        "post_id": "188727",
+        "pub_date": "2025-09-26",
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "unique_pageviews": 361
+      },
+      {
+        "tags": "",
+        "post_id": "188727",
+        "pub_date": "2025-09-26",
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "unique_pageviews": 245
+      },
+      {
+        "tags": "",
+        "post_id": "188727",
+        "pub_date": "2025-09-26",
+        "userneeds": "Forbind mig",
+        "categories": "Artikel",
+        "unique_pageviews": 381
+      },
+      {
+        "tags": "",
+        "post_id": "188748",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "unique_pageviews": 1466
+      },
+      {
+        "tags": "",
+        "post_id": "188748",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "unique_pageviews": 606
+      },
+      {
+        "tags": "",
+        "post_id": "188748",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "unique_pageviews": 235
+      },
+      {
+        "tags": "",
+        "post_id": "188748",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "unique_pageviews": 161
+      },
+      {
+        "tags": "",
+        "post_id": "188748",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "unique_pageviews": 94
+      },
+      {
+        "tags": "",
+        "post_id": "188748",
+        "pub_date": "2025-09-23",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "unique_pageviews": 58
+      },
+      {
+        "tags": "Specialpædagogik",
+        "post_id": "188771",
+        "pub_date": "2025-09-25",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "unique_pageviews": 148
+      },
+      {
+        "tags": "Specialpædagogik",
+        "post_id": "188771",
+        "pub_date": "2025-09-25",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "unique_pageviews": 82
+      },
+      {
+        "tags": "Specialpædagogik",
+        "post_id": "188771",
+        "pub_date": "2025-09-25",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "unique_pageviews": 53
+      },
+      {
+        "tags": "Specialpædagogik",
+        "post_id": "188771",
+        "pub_date": "2025-09-25",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "unique_pageviews": 24
+      },
+      {
+        "tags": "",
+        "post_id": "188818",
+        "pub_date": "2025-09-26",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 165
+      },
+      {
+        "tags": "",
+        "post_id": "188818",
+        "pub_date": "2025-09-26",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 135
+      },
+      {
+        "tags": "",
+        "post_id": "188818",
+        "pub_date": "2025-09-26",
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "Debat",
+        "unique_pageviews": 60
+      },
+      {
+        "tags": "",
+        "post_id": "188862",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "unique_pageviews": 170
+      },
+      {
+        "tags": "",
+        "post_id": "188862",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "unique_pageviews": 39
+      },
+      {
+        "tags": "",
+        "post_id": "188862",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "unique_pageviews": 17
+      },
+      {
+        "tags": "",
+        "post_id": "188862",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "unique_pageviews": 6
+      },
+      {
+        "tags": "",
+        "post_id": "188862",
+        "pub_date": "2025-09-24",
+        "userneeds": "Giv mig en fordel",
+        "categories": "Artikel",
+        "unique_pageviews": 134
+      },
+      {
+        "tags": "",
+        "post_id": "188884",
+        "pub_date": "2025-09-26",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 995
+      },
+      {
+        "tags": "",
+        "post_id": "188884",
+        "pub_date": "2025-09-26",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 459
+      },
+      {
+        "tags": "",
+        "post_id": "188884",
+        "pub_date": "2025-09-26",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 154
+      },
+      {
+        "tags": "",
+        "post_id": "188896",
+        "pub_date": "2025-09-26",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 397
+      },
+      {
+        "tags": "",
+        "post_id": "188896",
+        "pub_date": "2025-09-26",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 329
+      },
+      {
+        "tags": "",
+        "post_id": "188896",
+        "pub_date": "2025-09-26",
+        "userneeds": "Opdater mig",
+        "categories": "Artikel",
+        "unique_pageviews": 235
+      }
+    ]
+  }
+}

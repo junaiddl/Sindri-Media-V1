@@ -1,0 +1,165 @@
+{
+  "site": 17,
+  "uge": "uge39",
+  "prev_uge": "uge38",
+  "scenario1": "1",
+  "scenario2": "12",
+  "data1": {
+    "table1": {
+      "data": {
+        "besog": {
+          "total": 4,
+          "afvigelse_ift_maal": "-99.8%",
+          "udvikling_ift_forrige_uge": "+0.0%"
+        },
+        "sidevisninger": {
+          "total": 4,
+          "afvigelse_ift_maal": "-99.9%",
+          "udvikling_ift_forrige_uge": "+0.0%"
+        },
+        "Next Click (%)": {
+          "total": 0,
+          "afvigelse_ift_maal": "-0.0%",
+          "udvikling_ift_forrige_uge": "-0.0%"
+        }
+      }
+    },
+    "table2": {
+      "data": [
+        {
+          "kanal": "Others",
+          "besog_uge": 1,
+          "andel_af_total": "25%",
+          "udvikling_ift_forrige_uge": "+0%"
+        },
+        {
+          "kanal": "Newsletter",
+          "besog_uge": 1,
+          "andel_af_total": "25%",
+          "udvikling_ift_forrige_uge": "0.00%"
+        },
+        {
+          "kanal": "Direct",
+          "besog_uge": 2,
+          "andel_af_total": "50%",
+          "udvikling_ift_forrige_uge": "-33.3%"
+        }
+      ]
+    },
+    "table3": {
+      "antal_artikler": 2,
+      "gns_next_click_%": 0,
+      "gns_sidevisninger": 0
+    },
+    "table4": {
+      "over_et_maal": 0,
+      "over_begge_maal": 0,
+      "under_begge_maal": 100
+    },
+    "table5": [
+      {
+        "andel": 50,
+        "brugerbehov": null,
+        "gns_next_click_%": 0,
+        "gns_sidevisninger": 0
+      },
+      {
+        "andel": 50,
+        "brugerbehov": "Giv mig en fordel",
+        "gns_next_click_%": 0,
+        "gns_sidevisninger": 0
+      }
+    ]
+  },
+  "data2": {
+    "goal": {
+      "min_cta": "10",
+      "min_pageviews": "350"
+    },
+    "last_week_articles": [
+      {
+        "tags": "",
+        "post_id": "26379",
+        "pub_date": "2025-09-23",
+        "pageviews": 0,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Nyheder",
+        "next_click_%": 0
+      },
+      {
+        "tags": "",
+        "post_id": "26424",
+        "pub_date": "2025-09-22",
+        "pageviews": 0,
+        "userneeds": "",
+        "categories": "",
+        "next_click_%": 0
+      }
+    ],
+    "two_weeks_ago_articles": [
+      {
+        "tags": "",
+        "post_id": "26092",
+        "pub_date": "2025-09-08",
+        "pageviews": 0,
+        "userneeds": "",
+        "categories": "",
+        "next_click_%": 0
+      },
+      {
+        "tags": "Penge",
+        "post_id": "26147",
+        "pub_date": "2025-09-08",
+        "pageviews": 0,
+        "userneeds": "Opdater mig",
+        "categories": "Nyheder",
+        "next_click_%": 0
+      },
+      {
+        "tags": "Udvikling",
+        "post_id": "26156",
+        "pub_date": "2025-09-09",
+        "pageviews": 0,
+        "userneeds": "Opdater mig",
+        "categories": "Ikke-kategoriseret,Nyheder",
+        "next_click_%": 0
+      },
+      {
+        "tags": "Fordele",
+        "post_id": "26220",
+        "pub_date": "2025-09-10",
+        "pageviews": 0,
+        "userneeds": "Inspirer mig",
+        "categories": "Nyheder",
+        "next_click_%": 0
+      },
+      {
+        "tags": "",
+        "post_id": "26279",
+        "pub_date": "2025-09-16",
+        "pageviews": 0,
+        "userneeds": "Opdater mig",
+        "categories": "Nyheder",
+        "next_click_%": 0
+      },
+      {
+        "tags": "Penge",
+        "post_id": "26295",
+        "pub_date": "2025-09-16",
+        "pageviews": 0,
+        "userneeds": "Giv mig en fordel",
+        "categories": "Nyheder",
+        "next_click_%": 0
+      },
+      {
+        "tags": "Penge",
+        "post_id": "26338",
+        "pub_date": "2025-09-18",
+        "pageviews": 0,
+        "userneeds": "Opdater mig",
+        "categories": "Nyheder",
+        "next_click_%": 0
+      }
+    ]
+  }
+}

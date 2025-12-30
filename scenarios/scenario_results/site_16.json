@@ -1,0 +1,267 @@
+{
+  "site": 16,
+  "uge": "uge39",
+  "prev_uge": "uge38",
+  "scenario1": "6",
+  "scenario2": "12",
+  "data1": {
+    "table1": {
+      "data": {
+        "besog": {
+          "total": 5350,
+          "afvigelse_ift_maal": "+39.0%",
+          "udvikling_ift_forrige_uge": "+24.7%"
+        },
+        "sidevisninger": {
+          "total": 8156,
+          "afvigelse_ift_maal": "+1.3%",
+          "udvikling_ift_forrige_uge": "+21.5%"
+        },
+        "Next Click (%)": {
+          "total": 17.1,
+          "afvigelse_ift_maal": "+14.2%",
+          "udvikling_ift_forrige_uge": "-51.1%"
+        }
+      }
+    },
+    "table2": {
+      "data": [
+        {
+          "kanal": "Search",
+          "besog_uge": 1790,
+          "andel_af_total": "33.5%",
+          "udvikling_ift_forrige_uge": "+3.8%"
+        },
+        {
+          "kanal": "Direct",
+          "besog_uge": 1567,
+          "andel_af_total": "29.3%",
+          "udvikling_ift_forrige_uge": "-16.2%"
+        },
+        {
+          "kanal": "Others",
+          "besog_uge": 378,
+          "andel_af_total": "7.1%",
+          "udvikling_ift_forrige_uge": "-5.0%"
+        },
+        {
+          "kanal": "Newsletter",
+          "besog_uge": 1567,
+          "andel_af_total": "29.3%",
+          "udvikling_ift_forrige_uge": "+1035.5%"
+        },
+        {
+          "kanal": "Facebook",
+          "besog_uge": 48,
+          "andel_af_total": "0.9%",
+          "udvikling_ift_forrige_uge": "-69.8%"
+        }
+      ]
+    },
+    "table3": {
+      "antal_artikler": 9,
+      "gns_next_click_%": 12.4,
+      "gns_sidevisninger": 235.7
+    },
+    "table4": {
+      "over_et_maal": 66.7,
+      "over_begge_maal": 0,
+      "under_begge_maal": 33.3
+    },
+    "table5": [
+      {
+        "andel": 11.1,
+        "brugerbehov": "Forbind mig",
+        "gns_next_click_%": 13.9,
+        "gns_sidevisninger": 567
+      },
+      {
+        "andel": 44.4,
+        "brugerbehov": "Giv mig en fordel",
+        "gns_next_click_%": 10.4,
+        "gns_sidevisninger": 308
+      },
+      {
+        "andel": 11.1,
+        "brugerbehov": "Hjælp mig med at forstå",
+        "gns_next_click_%": 13.7,
+        "gns_sidevisninger": 51
+      },
+      {
+        "andel": 22.2,
+        "brugerbehov": "Inspirer mig",
+        "gns_next_click_%": 19.2,
+        "gns_sidevisninger": 117
+      },
+      {
+        "andel": 11.1,
+        "brugerbehov": "Opdater mig",
+        "gns_next_click_%": 10.8,
+        "gns_sidevisninger": 37
+      }
+    ]
+  },
+  "data2": {
+    "goal": {
+      "min_cta": "15",
+      "min_pageviews": "100"
+    },
+    "last_week_articles": [
+      {
+        "tags": "Lærlinge/ungdom",
+        "post_id": "3912",
+        "pub_date": "2025-09-22",
+        "pageviews": 192,
+        "userneeds": "Inspirer mig",
+        "categories": "",
+        "next_click_%": 9.375
+      },
+      {
+        "tags": "Uddannelse",
+        "post_id": "3916",
+        "pub_date": "2025-09-22",
+        "pageviews": 514,
+        "userneeds": "Forbind mig",
+        "categories": "",
+        "next_click_%": 12.8404669
+      },
+      {
+        "tags": "Løn og fordele",
+        "post_id": "3917",
+        "pub_date": "2025-09-23",
+        "pageviews": 96,
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "next_click_%": 54.1666666
+      },
+      {
+        "tags": "Uddannelse",
+        "post_id": "3918",
+        "pub_date": "2025-09-22",
+        "pageviews": 55,
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "next_click_%": 7.2727272
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "3919",
+        "pub_date": "2025-09-23",
+        "pageviews": 982,
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "next_click_%": 5.2953156
+      },
+      {
+        "tags": "Løn og fordele",
+        "post_id": "3920",
+        "pub_date": "2025-09-23",
+        "pageviews": 33,
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "next_click_%": 48.4848484
+      },
+      {
+        "tags": "Uddannelse, Lærlinge/ungdom",
+        "post_id": "3923",
+        "pub_date": "2025-09-24",
+        "pageviews": 31,
+        "userneeds": "Inspirer mig",
+        "categories": "",
+        "next_click_%": 74.1935483
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "3926",
+        "pub_date": "2025-09-25",
+        "pageviews": 42,
+        "userneeds": "Hjælp mig med at forstå",
+        "categories": "",
+        "next_click_%": 16.6666666
+      },
+      {
+        "tags": "Politik og agenda",
+        "post_id": "3927",
+        "pub_date": "2025-09-25",
+        "pageviews": 28,
+        "userneeds": "Opdater mig",
+        "categories": "",
+        "next_click_%": 10.7142857
+      }
+    ],
+    "two_weeks_ago_articles": [
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "3892",
+        "pub_date": "2025-09-08",
+        "pageviews": 1491,
+        "userneeds": "",
+        "categories": "",
+        "next_click_%": 7.6458752
+      },
+      {
+        "tags": "Løn og fordele",
+        "post_id": "3894",
+        "pub_date": "2025-09-08",
+        "pageviews": 820,
+        "userneeds": "",
+        "categories": "",
+        "next_click_%": 5.2439024
+      },
+      {
+        "tags": "Uddannelse",
+        "post_id": "3896",
+        "pub_date": "2025-09-09",
+        "pageviews": 62,
+        "userneeds": "Giv mig en fordel",
+        "categories": "",
+        "next_click_%": 3.2258064
+      },
+      {
+        "tags": "Formanden",
+        "post_id": "3897",
+        "pub_date": "2025-09-09",
+        "pageviews": 86,
+        "userneeds": "Inspirer mig",
+        "categories": "",
+        "next_click_%": 3.488372
+      },
+      {
+        "tags": "Lærlinge/ungdom",
+        "post_id": "3898",
+        "pub_date": "2025-09-09",
+        "pageviews": 148,
+        "userneeds": "Inspirer mig",
+        "categories": "",
+        "next_click_%": 21.6216216
+      },
+      {
+        "tags": "Uddannelse",
+        "post_id": "3899",
+        "pub_date": "2025-09-14",
+        "pageviews": 38,
+        "userneeds": "Inspirer mig",
+        "categories": "",
+        "next_click_%": 10.5263157
+      },
+      {
+        "tags": "Politik og agenda",
+        "post_id": "3905",
+        "pub_date": "2025-09-15",
+        "pageviews": 42,
+        "userneeds": "Opdater mig",
+        "categories": "",
+        "next_click_%": 2.3809523
+      },
+      {
+        "tags": "Arbejdsmiljø",
+        "post_id": "3910",
+        "pub_date": "2025-09-17",
+        "pageviews": 69,
+        "userneeds": "",
+        "categories": "",
+        "next_click_%": 11.5942028
+      }
+    ]
+  }
+}

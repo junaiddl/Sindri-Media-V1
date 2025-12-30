@@ -1,0 +1,10 @@
+
+target/
+dbt_packages/
+logs/
+analysis/
+snapshots/
+seeds/
+logs/
+tests/
+dbt_project.yml

@@ -1,0 +1,86 @@
+{% macro tactical_clicks_ytd_dbt_newsletter() %}
+
+{% set site = var('site') %}
+{% set event_name = var('event_action')%}
+
+{% set tag_filters_exclude = var('condition') %}
+
+CREATE PROCEDURE `tactical_clicks_ytd_dbt_{{site}}`()
+BEGIN
+WITH 
+last_30_days_article_published AS (
+    SELECT siteid as siteid,id   
+    FROM prod.site_archive_post
+    WHERE 
+    date  BETWEEN MAKEDATE(EXTRACT(YEAR FROM CURDATE()),1)  and  DATE_SUB(cast(NOW() as date), INTERVAL 1 DAY)
+    AND siteid = {{site}}
+    {% if tag_filters_exclude.status %}
+    {{tag_filters_exclude.query}}
+    {% endif %}
+),
+
+last_30_days_article_published_Agg AS (
+    SELECT siteid as siteid,count(*) as agg 
+    FROM  last_30_days_article_published
+    WHERE siteid = {{site}}
+    group by 1
+),
+
+agg_last_30_days AS
+(
+    SELECT  e.siteid as siteid,sum(hits)/agg as value from prod.events e
+    JOIN  last_30_days_article_published a on a.id=e.postid
+    JOIN last_30_days_article_published_Agg agg on agg.siteid=a.siteid 
+    WHERE date  BETWEEN MAKEDATE(EXTRACT(YEAR FROM CURDATE()),1)  and  DATE_SUB(cast(NOW() as date), INTERVAL 1 DAY)
+    AND e.siteid = {{site}}
+    AND e.Event_Action = '{{event_name}}'
+    GROUP by 1,agg
+),
+
+last_30_days_before_article_published AS
+(
+    SELECT siteId as siteId,id
+    FROM prod.site_archive_post
+    WHERE date  between DATE_SUB(MAKEDATE(EXTRACT(YEAR FROM CURDATE()),1), INTERVAL 1 Year)  and  DATE_SUB(DATE_SUB(cast(NOW() as date), INTERVAL 1 DAY),INTERVAL 1 Year) 
+    AND  siteid = {{site}}
+    {% if tag_filters_exclude.status %}
+    {{tag_filters_exclude.query}}
+    {% endif %}
+),
+
+
+last_30_days_before_article_published_Agg AS (
+    SELECT siteid as siteid,count(*) as agg 
+    FROM last_30_days_before_article_published
+    WHERE siteid = {{site}}
+    GROUP by 1
+),
+
+agg_last_30_days_before AS (
+    SELECT  e.siteid as siteid,sum(hits)/agg as value from prod.events e
+    JOIN  last_30_days_before_article_published a on a.id=e.postid
+    JOIN last_30_days_before_article_published_Agg agg on agg.siteid=a.siteid 
+    WHERE date  between DATE_SUB(MAKEDATE(EXTRACT(YEAR FROM CURDATE()),1), INTERVAL 1 Year) AND DATE_SUB(DATE_SUB(cast(NOW() as date), INTERVAL 1 DAY),INTERVAL 1 Year) 
+    AND e.siteid = {{site}}
+    AND e.Event_Action = '{{event_name}}'
+    GROUP by 1,agg
+)
+
+SELECT 
+    JSON_OBJECT(
+        'site', al.siteid,
+        'data', JSON_OBJECT(
+            'label', 'Gns. sign-ups pr artikel',
+            'hint', 'Gennemsnitligt antal nyhedsbrev sign-ups på artikler publiceret år til dato ift. sidste år',
+            'value', COALESCE(al.value, 0),
+            'change', COALESCE(round(((al.value-alb.value)/al.value)*100,2),0),
+            'progressCurrent', '',
+            'progressTotal', ''
+        )
+    ) AS json_data
+FROM agg_last_30_days al
+LEFT JOIN agg_last_30_days_before alb ON al.siteid = alb.siteid
+WHERE al.siteid = {{site}};
+
+END
+{% endmacro %}
