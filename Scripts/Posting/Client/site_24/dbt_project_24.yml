@@ -1,0 +1,219 @@
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: "dbt_project"
+version: "1.0.0"
+
+# This setting configures which "profile" dbt uses for this project.
+profile: "dbt_project"
+
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets: # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+
+# In this example config, we tell dbt to build all models in the example/
+# directory as views. These settings can be overridden in the individual model
+# files using the `{{ config(...) }}` macro.
+models:
+  dbt_project:
+    # Config indicated by + and applies to all files under models/example/
+    example:
+      +materialized: view
+    static:
+      +materialized: view
+    dynamic:
+      +materialized: view
+
+vars:
+  site: 24
+  event_action: "Next Click"
+  string_id: true
+
+  # this represents the JSON formatting for the tables of Tendency
+  click_val: '[{"field": "id", "label": "ID"}, {"field": "article", "label": "ARTIKEL"}, {"field": "category", "label": "BRUGERBEHOV"}, {"field": "sektion", "label": "AFDELING", "hidden": true},{"field": "tags", "label": "TAGS", "hidden": true}, {"field": "date", "label": "DATO"}, {"field": "brugerbehov", "label": "SIDEVISNINGER"}, {"field": "clicks", "label": "NEXT CLICK (%)"}]'
+
+  condition:
+    status: false
+    query : AND (
+      tags LIKE '%forbrugerliv%' OR
+      tags LIKE '%privatoekonomi%' OR
+      tags LIKE '%test%' OR
+      tags LIKE '%kemi%' OR
+      tags LIKE '%raadgivning%' ) 
+    description: "Here we provide the SQL query for the column we want to skip and the value of the specific column in the query key, suppose we want to skip values
+    Opdater mig from userneeds, we provide the sql query: WHERE userneeds != 'Opdater mig' . We also need to set the status to false else the sql query is not picked up."
+
+  columns_to_add:
+    status: false
+    columns_name: NONE
+    condition: ""
+    description:
+      "This logic is used in to include extra columns in our Article Evaluation procedures, for example in site 15 we needed an extra column Emner."
+
+  Tendency:
+    dropdown_cte_naming: ["", "_second"]
+
+    dropdown_titles: ["Brugerbehov", "AFDELING"]
+
+    dropdown_mapping:
+      Brugerbehov: "userneeds"
+      AFDELING: "Categories"
+      # Sektion: "Tags"
+
+    dropdown_values:
+      userneeds:
+        [
+          "Opdater mig",
+          "Forbind mig",
+          "Hjælp mig med at forstå",
+          "Giv mig en fordel",
+          "Underhold mig",
+          "Inspirer mig",
+        ]
+      Categories:
+        [
+         "BUPL.dk",
+         "BUPL Hovedstaden",
+         "BUPL Sydjylland",
+         "BUPL Nordsjælland",
+         "BUPL Sydøst",
+         "BUPL Storkøbenhavn",
+         "BUPL Fyn",
+         "BUPL Østjylland",
+         "BUPL Århus",
+         "BUPL Midtsjælland",
+         "BUPL MidtVestjylland",
+         "BUPL Nordjylland",
+         "BUPL Bornholm"
+        ]
+      # Tags:
+      #   [
+      #     "Forbrugerliv",
+      #     "Test",
+      #     "Kemi",
+      #     "Privatøkonomi",
+      #     "Rådgivning",
+      #   ]
+
+    dropdown_values_grouping:
+      userneeds:
+        [
+          "Opdater mig",
+          "Forbind mig",
+          "Hjælp mig med at forstå",
+          "Giv mig en fordel",
+          "Underhold mig",
+          "Inspirer mig",
+        ]
+      Categories:
+        [
+         "BUPL.dk",
+         "BUPL Hovedstaden",
+         "BUPL Sydjylland",
+         "BUPL Nordsjælland",
+         "BUPL Sydøst",
+         "BUPL Storkøbenhavn",
+         "BUPL Fyn",
+         "BUPL Østjylland",
+         "BUPL Århus",
+         "BUPL Midtsjælland",
+         "BUPL MidtVestjylland",
+         "BUPL Nordjylland",
+         "BUPL Bornholm"
+        ]
+      # Tags:
+      #   [
+      #     "Forbrugerliv",
+      #     "Test",
+      #     "Kemi",
+      #     "Privatøkonomi",
+      #     "Rådgivning",
+      #   ]
+    order_statements:
+      userneeds: "'Opdater mig','Forbind mig','Hjælp mig med at forstå','Giv mig en fordel', 'Underhold mig', 'Inspirer mig'"
+      Categories: "'BUPL.dk','BUPL Hovedstaden','BUPL Sydjylland','BUPL Nordsjælland','BUPL Sydøst','BUPL Storkøbenhavn','BUPL Fyn','BUPL Østjylland','BUPL Århus','BUPL Midtsjælland','BUPL MidtVestjælland','BUPL Nordjylland','BUPL Bornholm'"
+      # Tags: "'Forbrugerliv','Test','Kemi','Privatøkonomi','Rådgivning'"
+
+  Traffic:
+    # in the input we specify the variables for the Linechart in Traffic Channel, we will provide the RealRefferers list for line chart (taken from the onboarding) along with the names of specific newsletter campaigns
+    input_referrers_linechart: "''Direct'',''Search'',''Facebook'', ''Newsletter'' "
+    # in the output we specify the output labels for the Linechart in Traffic Channel, we will provide the RealRefferers list for line chart only (taken from the onboarding)
+    output_referrers_linechart: "''Direct'',''Search'',''Facebook'',''Newsletter''"
+
+    domain: "''https://bupl.dk/''"
+
+    # here we provide the names of the CTE's for each drop down
+    dropdown_cte_naming: ["_first", "_second"]
+
+    # here we specify the values of RealRefferers list for "pageviews" and "channels" (taken from client onboarding)
+    output_referrers_pageviews_channel: "''Forside'',''Search'',''Facebook'',''Newsletter''"
+    output_referrers_pageviews_channel_traffic: "''Forside'', ''Search'', ''Facebook''"
+    output_referrers_pageviews_channel_newsletter: "''Newsletter''"
+
+    # we now provide the drop down names against the values which we want from the drop down (values we provide are the modified ones same as the ones in dropdown_values_grouping variable in Tendency)
+    input_tags_pageviews_channel:
+      Brugerbehov: "''Opdater mig'',''Forbind mig'',''Hjælp mig med at forstå'',''Giv mig en fordel'',''Underhold mig'',''Inspirer mig''"
+      AFDELING: "''BUPL.dk'',''BUPL Hovedstaden'',''BUPL Sydjylland'',''BUPL Nordsjælland'',''BUPL Sydøst'',''BUPL Storkøbenhavn'',''BUPL Fyn'',''BUPL Østjælland'',''BUPL Århus'',''BUPL Midtsjælland'',''BUPL MidtVestjælland'',''BUPL Nordjylland'',''BUPL Bornholm''"
+      # Sektion: "''Forbrugerliv'',''Test'',''Kemi'',''Privatøkonomi'',''Rådgivning''"
+
+
+    # This is used in the table of traffic_channels
+    table_grouping:
+      # the default columns require no sort of grouping and will be written as they are in prod.site_archive_post
+      default_columns: ["tags", "userneeds", "Categories"]
+      # the following will be set to true if we are to create any new column in the table (Eg. Emner In Site 15)
+      grouping_status: false
+      # we will define the name of the new column, values will be taken from above (Eg. "Emner")
+      grouping_columns: [""]
+      # we will also define the JSON for the table output according to the defined column mappings
+      # for the new column we will create a new mapping entry for example:
+      # ''emner'', coalesce(tags, " "),
+      table_json: |
+        ''category'', coalesce(userneeds, " "),
+        ''tags'', coalesce(tags," "),
+        ''sektion'', coalesce(Categories, " "),
+      total_columns: 3 # for each new column we increment this value by 1
+
+    # this represent the JSON formatting for the tables in our traffic channel procedures
+    entry_pages_json: |
+      [{"field": "id","label": "ID"},{"field": "article","label": "ARTIKEL"},{"field": "category","label": "BRUGERBEHOV"},{"field": "sektion", "label": "AFDELING", "hidden": true},{"field": "tags", "label": "tags", "hidden": true},{"field": "date","label": "DATO"},{"field": "brugerbehov","label": "Besøg"}]
+
+
+  # used to modify how the tags/userneeds/sektion values in the table shall be represented (ADD AS STATEMENTS AT THE END)
+  table_modification:
+    table_modification_tendency:
+      userneeds: |
+        userneeds
+      tags: |
+        tags
+      Categories: |
+        Categories
+
+    table_modification_traffic:
+      userneeds: |
+        userneeds
+      tags: |
+        tags
+      Categories: |
+        Categories
+  # here we provide sql json queries to represent how the values in our table will be formatted to match the grouping logic (if any) specified for tables in onboarding.
+   # Configuration for exploration-related operations.
+  exploration:
+    # Whether to include historic data.
+    historic_data: true
+    # Columns to include in exploration operations.
+    columns: |
+      'category', COALESCE(userneeds, ''), 'sektion', COALESCE(tags,''),
